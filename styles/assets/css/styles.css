@@ -258,7 +258,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .engaging_div {
     display: flex;
     width: 100%;
@@ -479,15 +479,15 @@
   }
   .Rectangle-More-info {
     position: absolute;
-    top: -240px;
-    left: 119px;
+    top: -66px;
+    left: 102px;
   }
   .voting-heading {
     display: flex;
     position: absolute;
   }
   .Earlham-college-name {
-    margin: -50px 0px 0px -51px;
+    margin: 93px 0px 0px -51px;
   }
   .Earlham-College {
     width: 290px;

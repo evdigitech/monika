@@ -15,12 +15,15 @@ import illustration from "../styles/assets/images/rank-illustration.png";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FaRegUser } from "react-icons/fa";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 // import SocialRank from "../pages/univercity/socialRank/SocialRank";
 
 function Navbar() {
  
   return (
     <>
+    
       <div className="container-fluid">
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light ">
@@ -96,8 +99,7 @@ function Navbar() {
                 </form>
               </div>
             </div>
-          </nav>      
-         
+          </nav>            
         </div>
       </div>
     </>
