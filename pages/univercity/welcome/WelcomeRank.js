@@ -44,8 +44,7 @@ function WelcomeRank() {
           <Col xs={12} sm={12} md={6} className="wel-rank-col">
             <div className="Welcome-Rank-div">
               <span className="Welcome-to-Rankorder">
-              Welcome to EvDigitech
-                {/* Welcome to Rankordered */}
+                Welcome to Rankordered
               </span>
               <div>
                 <span className="We-crowdsource-opini">
