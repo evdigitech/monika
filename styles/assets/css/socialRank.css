@@ -1,0 +1,77 @@
+.Crowdsourced-Social {
+    width: 703px;
+    height: 208px;
+    /* margin: 337px 614px 13px 193px; */
+    font-family: Avenir;
+    font-size: 60px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.47px;
+    color: #323232;
+  }
+  .Discover-the-most-en {
+    width: 662px;
+    height: 41px;
+    margin: 0 0 50px 0px;
+    font-family: Avenir;
+    font-size:21.5px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color:#626262;
+    white-space: nowrap;
+  }
+  .Discover-the-most-en-social{
+    width: 648px;
+  height: 39px;
+  margin: 14px 55px 0 0;
+  font-family: Avenir;
+  font-size: 21.5px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.81;
+  letter-spacing: normal;
+  color: #626262;
+  white-space: nowrap;
+
+  }
+  .Rank-Illustration{
+    text-align: end;
+  }
+  /* button */
+  .engaging content{
+    display: flex;
+    text-align: center;
+  }
+  .Path {
+    width: 16px;
+    height: 20px;
+    position: absolute;
+    left: 648px;
+    margin-top: -32px;
+  }
+  .Rectangle-17-copy {
+    width: 136px;
+    height: 43px;
+    margin: 50px -5px 63px 41px;
+    padding: 12px 16px 12px 17px;
+    border-radius:22px !important;
+    background-color:#f3f3f3 !important;
+    color: #44ac80 !important;
+    outline: none !important;
+    border:#fff !important;
+  }
+  .Rectangle-17-copy:hover{
+    background-color:#44ac80 !important;
+    color: #fff !important;
+    border:#44ac80 !important;
+    outline: none !important;
+
+    border:#fff !important;
+  }

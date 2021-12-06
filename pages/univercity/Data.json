@@ -1,0 +1,865 @@
+{
+    "items": [
+        {
+            "id": 67,
+            "name": "Dartmouth College",
+            "image": "http://stgapi.rankordered.com/files/collegeImages/DC.png",
+            "image_author": "Kane5187",
+            "image_title": "Dartmouth College campus 2007-06-23 McNutt Hall 01",
+            "image_url": "https://commons.wikimedia.org/wiki/File:Dartmouth_College_campus_2007-06-23_McNutt_Hall_01.JPG",
+            "image_license": "Public Domain",
+            "city": "Hanover",
+            "state": "NH",
+            "description": "Dartmouth College (/ˈdɑːrtməθ/ DART-məth) is a private Ivy League research university in Hanover, New Hampshire, United States. Established in 1769 by Eleazar Wheelock, it is the ninth-oldest institution of higher education in the United States and one of the nine colonial colleges chartered before the American Revolution. Although initially founded as a school to educate young Native Americans in Christian theology and liberal arts, Dartmouth primarily trained Congregationalist ministers throughout its early history before it gradually secularized, emerging at the turn of the 20th century from relative obscurity into national prominence.",
+            "description_url": "https://en.wikipedia.org/wiki/Dartmouth_College",
+            "founded_date": "1769",
+            "website": "https://home.dartmouth.edu/",
+            "status": 1,
+            "rating": "157",
+            "rank": [
+                [
+                    "Date",
+                    "Rank"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    1
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    1
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    1
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    1
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    1
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    1
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    1
+                ]
+            ],
+            "ratings": [
+                [
+                    "Date",
+                    "Elo Rating"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    157
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    157
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    157
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    157
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    157
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    157
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    157
+                ]
+            ],
+            "rank_number": "1"
+        },
+        {
+            "id": 324,
+            "name": "Earlham College",
+            "image": "http://stgapi.rankordered.com/files/collegeImages/Earlham.png",
+            "image_author": "Earlham College",
+            "image_title": "Earlham Cupola",
+            "image_url": "https://commons.wikimedia.org/wiki/File:Earlham_Cupola.jpg",
+            "image_license": "Public Domain",
+            "city": "Richmond",
+            "state": "IN",
+            "description": "Earlham College is a private liberal arts college in Richmond, Indiana. The college was established in 1847 by the Religious Society of Friends (Quakers) and has a strong focus on Quaker values such as integrity, a commitment to peace and social justice, mutual respect, and community decision-making. It is primarily a residential undergraduate college but it offers a Master of Arts in Teaching and has an affiliated graduate seminary, the Earlham School of Religion, which offers three master's degrees: a Master of Divinity, Master of Ministry, and Master of Arts in Religion.",
+            "description_url": "https://en.wikipedia.org/wiki/Earlham_College",
+            "founded_date": "1847",
+            "website": "https://earlham.edu/",
+            "status": 1,
+            "rating": "81",
+            "rank": [
+                [
+                    "Date",
+                    "Rank"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    2
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    2
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    2
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    2
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    2
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    2
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    2
+                ]
+            ],
+            "ratings": [
+                [
+                    "Date",
+                    "Elo Rating"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    81
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    81
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    81
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    81
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    81
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    81
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    81
+                ]
+            ],
+            "rank_number": "2"
+        },
+        {
+            "id": 50,
+            "name": "California Institute of Technology",
+            "image": "http://stgapi.rankordered.com/files/collegeImages/Caltech.png",
+            "image_author": "Canon.vs.nikon",
+            "image_title": "Caltech Entrance",
+            "image_url": "https://commons.wikimedia.org/wiki/File:Caltech_Entrance.jpg",
+            "image_license": "CC BY-SA 3.0",
+            "city": "Pasadena",
+            "state": "CA",
+            "description": "The California Institute of Technology (Caltech) is a private research university in Pasadena, California. The university is known for its strength in science and engineering, and is one among a small group of institutes of technology in the United States which is primarily devoted to the instruction of pure and applied sciences.",
+            "description_url": "https://en.wikipedia.org/wiki/California_Institute_of_Technology",
+            "founded_date": "1891",
+            "website": "http://www.caltech.edu/",
+            "status": 1,
+            "rating": "43",
+            "rank": [
+                [
+                    "Date",
+                    "Rank"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    3
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    4
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    4
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    4
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    3
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    4
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    4
+                ]
+            ],
+            "ratings": [
+                [
+                    "Date",
+                    "Elo Rating"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    43
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    43
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    43
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    43
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    43
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    43
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    43
+                ]
+            ],
+            "rank_number": "3"
+        },
+        {
+            "id": 305,
+            "name": "Minnesota State University, Mankato",
+            "image": "http://stgapi.rankordered.com/files/collegeImages/MSUMANKATO.png",
+            "image_author": "Randomeditor1000",
+            "image_title": "MSU PreskaHallandDinigHall",
+            "image_url": "https://commons.wikimedia.org/wiki/File:MSU_PreskaHallandDinigHall.jpg",
+            "image_license": "CC BY-SA 4.0",
+            "city": "Mankato",
+            "state": "MN",
+            "description": "Minnesota State University, Mankato (MSU or MNSU), also known as Minnesota State, is a public university in Mankato, Minnesota. Established as the Second State Normal School in 1858, it was designated in Mankato in 1866, and officially opened as Mankato Normal School in 1868. It is the second oldest member of the Minnesota State Colleges and Universities system. It is also the second largest university in the state, and has over 123,000 living alumni worldwide. It is the most comprehensive of the seven state universities and is referred to as the flagship of the Minnesota State Colleges and Universities system. It is an important part of the economy of Southern Minnesota and the state as it adds more than $781 million to the economy of Minnesota annually.",
+            "description_url": "https://en.wikipedia.org/wiki/Minnesota_State_University,_Mankato",
+            "founded_date": "1868",
+            "website": "https://www.mnsu.edu/",
+            "status": 1,
+            "rating": "43",
+            "rank": [
+                [
+                    "Date",
+                    "Rank"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    4
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    3
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    3
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    3
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    4
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    3
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    3
+                ]
+            ],
+            "ratings": [
+                [
+                    "Date",
+                    "Elo Rating"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    43
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    43
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    43
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    43
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    43
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    43
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    43
+                ]
+            ],
+            "rank_number": "4"
+        },
+        {
+            "id": 154,
+            "name": "New Mexico State University",
+            "image": "http://stgapi.rankordered.com/files/collegeImages/NMSU.png",
+            "image_author": "Terry Umbenhaur",
+            "image_title": "NMSU Campus",
+            "image_url": "https://commons.wikimedia.org/wiki/File:NMSU_Campus.jpg",
+            "image_license": "CC BY-SA 3.0",
+            "city": "Las Cruces",
+            "state": "NM",
+            "description": "New Mexico State University (NMSU or NM State) is a public land-grant research university with its main campus in Las Cruces, New Mexico. Founded on September 17, 1888, it is the oldest public institution of higher education in the state of New Mexico and one of two flagship universities in New Mexico. Total enrollment across all campuses as of 2017 was 21,874, with branch campuses in Alamogordo, Carlsbad, Doña Ana County and Grants, and with extension and research centers across New Mexico.",
+            "description_url": "https://en.wikipedia.org/wiki/New_Mexico_State_University",
+            "founded_date": "1888",
+            "website": "https://www.nmsu.edu/",
+            "status": 1,
+            "rating": "42",
+            "rank": [
+                [
+                    "Date",
+                    "Rank"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    5
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    5
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    5
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    5
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    5
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    5
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    5
+                ]
+            ],
+            "ratings": [
+                [
+                    "Date",
+                    "Elo Rating"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    42
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    42
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    42
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    42
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    42
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    42
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    42
+                ]
+            ],
+            "rank_number": "5"
+        },
+        {
+            "id": 389,
+            "name": "Florida Gulf Coast University",
+            "image": "http://stgapi.rankordered.com/files/collegeImages/FloridaGulfCoastUniversity.png",
+            "image_author": "Twhair",
+            "image_title": "FGCU Lutgert School of Business",
+            "image_url": "https://commons.wikimedia.org/wiki/File:FGCU_Lutgert_School_of_Business.jpg",
+            "image_license": "CC BY-SA 3.0",
+            "city": "Fort Myers",
+            "state": "FL",
+            "description": "Florida Gulf Coast University (FGCU) is a public university in Fort Myers, Florida. It is part of the State University System of Florida and is its second youngest member. The university was established on May 3, 1991, and is accredited by the Southern Association of Colleges and Schools (SACS) to award 58 different types of bachelor's, 25 different master's, six doctoral degrees, and twelve graduate certificates. All of the university's undergraduate engineering degrees are accredited by the Accreditation Board for Engineering and Technology (ABET).",
+            "description_url": "https://en.wikipedia.org/wiki/Florida_Gulf_Coast_University",
+            "founded_date": "1991",
+            "website": "https://www.fgcu.edu/",
+            "status": 1,
+            "rating": "22",
+            "rank": [
+                [
+                    "Date",
+                    "Rank"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    6
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    6
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    6
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    6
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    6
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    6
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    6
+                ]
+            ],
+            "ratings": [
+                [
+                    "Date",
+                    "Elo Rating"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    22
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    22
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    22
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    22
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    22
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    22
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    22
+                ]
+            ],
+            "rank_number": "6"
+        },
+        {
+            "id": 43,
+            "name": "University of Pittsburgh",
+            "image": "http://stgapi.rankordered.com/files/collegeImages/Upitt.png",
+            "image_author": "Notyourbroom",
+            "image_title": "Cathedral of Learning stitch 1",
+            "image_url": "https://commons.wikimedia.org/wiki/File:Cathedral_of_Learning_stitch_1.jpg",
+            "image_license": "CC BY-SA 3.0",
+            "city": "Pittsburgh",
+            "state": "PA",
+            "description": "The University of Pittsburgh (Pitt) is a state-related public research university in Pittsburgh, Pennsylvania, United States. The university is composed of 17 undergraduate and graduate schools and colleges at its urban Pittsburgh campus, home to the university's central administration and 28,391 undergraduate and graduate students.",
+            "description_url": "https://en.wikipedia.org/wiki/University_of_Pittsburgh",
+            "founded_date": "1787",
+            "website": "https://pitt.edu/",
+            "status": 1,
+            "rating": "21",
+            "rank": [
+                [
+                    "Date",
+                    "Rank"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    11
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    20
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    28
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    10
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    11
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    10
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    28
+                ]
+            ],
+            "ratings": [
+                [
+                    "Date",
+                    "Elo Rating"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    21
+                ]
+            ],
+            "rank_number": "7"
+        },
+        {
+            "id": 44,
+            "name": "North Carolina State University",
+            "image": "http://stgapi.rankordered.com/files/collegeImages/NCSU.png",
+            "image_author": "Seth Ilys",
+            "image_title": "HolladayHallNCSU",
+            "image_url": "https://commons.wikimedia.org/wiki/File:HolladayHallNCSU.JPG",
+            "image_license": "Public Domain",
+            "city": "Raleigh",
+            "state": "NC",
+            "description": "North Carolina State University (also referred to as NCSU, NC State, or just State) is a public land-grant research university in Raleigh, North Carolina. Founded in 1887 and part of the University of North Carolina system, it is the largest university in the Carolinas. The university forms one of the corners of the Research Triangle together with Duke University in Durham and the University of North Carolina at Chapel Hill. It is classified among \"R1: Doctoral Universities – Very high research activity\".",
+            "description_url": "https://en.wikipedia.org/wiki/North_Carolina_State_University",
+            "founded_date": "1887",
+            "website": "http://www.ncsu.edu/",
+            "status": 1,
+            "rating": "21",
+            "rank": [
+                [
+                    "Date",
+                    "Rank"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    13
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    22
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    8
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    12
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    13
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    12
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    8
+                ]
+            ],
+            "ratings": [
+                [
+                    "Date",
+                    "Elo Rating"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    21
+                ]
+            ],
+            "rank_number": "8"
+        },
+        {
+            "id": 52,
+            "name": "University of Massachusetts Amherst",
+            "image": "http://stgapi.rankordered.com/files/collegeImages/UMass_Amherst.png",
+            "image_author": "Lion Hirth",
+            "image_title": "UMass Amherst Goodell",
+            "image_url": "https://commons.wikimedia.org/wiki/File:UMass_Amherst_Goodell.jpg",
+            "image_license": "Public Domain",
+            "city": "Amherst",
+            "state": "MA",
+            "description": "The University of Massachusetts Amherst (UMass Amherst, UMass) is a public land-grant research university in Amherst, Massachusetts. Founded in 1863 as an agricultural college, it is the flagship and the largest campus in the University of Massachusetts system, as well as the first established. It is also a member of the Five College Consortium, along with four other colleges in the Pioneer Valley: Amherst College, Smith College, Mount Holyoke College, and Hampshire College.",
+            "description_url": "https://en.wikipedia.org/wiki/University_of_Massachusetts_Amherst",
+            "founded_date": "1863",
+            "website": "https://umass.edu/",
+            "status": 1,
+            "rating": "21",
+            "rank": [
+                [
+                    "Date",
+                    "Rank"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    8
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    17
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    25
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    7
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    8
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    7
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    25
+                ]
+            ],
+            "ratings": [
+                [
+                    "Date",
+                    "Elo Rating"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    21
+                ]
+            ],
+            "rank_number": "9"
+        },
+        {
+            "id": 82,
+            "name": "Syracuse University",
+            "image": "http://stgapi.rankordered.com/files/collegeImages/Syracuse.png",
+            "image_author": "DASonnenfeld",
+            "image_title": "Hall-of-Languages-Syracuse-Univ-2014",
+            "image_url": "https://commons.wikimedia.org/wiki/File:Hall-of-Languages-Syracuse-Univ-2014.jpg",
+            "image_license": "CC BY-SA 4.0",
+            "city": "Syracuse",
+            "state": "NY",
+            "description": "Syracuse University (Syracuse, 'Cuse, or SU) is a private research university in Syracuse, New York. The institution's roots can be traced to the Genesee Wesleyan Seminary, founded in 1831 by the Methodist Episcopal Church in Lima, New York. After several years of debate over relocating the college to Syracuse, the university was established in 1870, independent of the college. Since 1920, the university has identified itself as nonsectarian, although it maintains a relationship with The United Methodist Church.",
+            "description_url": "https://en.wikipedia.org/wiki/Syracuse_University",
+            "founded_date": "1870",
+            "website": "https://www.syracuse.edu/",
+            "status": 1,
+            "rating": "21",
+            "rank": [
+                [
+                    "Date",
+                    "Rank"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    7
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    16
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    24
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    28
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    7
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    28
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    24
+                ]
+            ],
+            "ratings": [
+                [
+                    "Date",
+                    "Elo Rating"
+                ],
+                [
+                    "2021-11-04T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-05T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-06T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-07T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-08T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-09T19:15:00.000Z",
+                    21
+                ],
+                [
+                    "2021-11-10T19:15:00.000Z",
+                    21
+                ]
+            ],
+            "rank_number": "10"
+        }
+    ]
+    
+}

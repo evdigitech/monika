@@ -1,0 +1,227 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../fonts/AvenirLTStd-Book.otf");
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: Avenir;
+}
+.Header-BackgroundMask {
+  width: 100%;
+  height: 978px;
+  margin: 0 0 107px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(156, 216, 190, 0.11),
+    rgba(108, 198, 159, 0.44)
+  );
+}
+.Ellipse-170 {
+  width: 388px;
+  height: 531px;
+  margin: 0 120px 34px 0;
+  padding: 18px 99px 430px 206px;
+  float: left;
+  background-color: rgba(108, 198, 159, 0.13);
+}
+.Large_Rank_ordered_Logo {
+  width: 83px;
+  height: 83px;
+}
+.Rectangle-2-copy {
+  height: 119px;
+  margin: 0 0 95px;
+  padding: 28px 175px 34px 6px;
+}
+
+.Home-About-Contact {
+  height: 22px;
+  margin:16px 221px 5px 302px;
+  font-size: 16px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2c3e50;
+}
+.Home-About-Contact li {
+  margin: 0px 50px 0px 20px;
+}
+.Rectangle-17-copy-nav{
+  height: 43px;
+  padding: 12px 16px 12px 17px;
+}
+
+.start_ranking {
+  border-radius: 50px !important;
+  width: 136px;
+  background-color: #44ac80 !important;
+  margin: 1px 22px 219px 1px;
+  padding: 5px 25px 14px;
+  border: 1px solid #44ac80 !important;
+}
+.Start-ranking {
+  height: 19px;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+.Image.user {
+  width: 14px;
+  height: 20px;
+  margin: 0 7px 0 30px;
+  object-fit: contain;
+  background-color: var(--dark-grey-blue);
+}
+
+.Hello-Susan {
+  width: 131px;
+  height: 19px;
+  margin: 1px 0 0 7px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  color: #2c3e50;
+}
+
+.Hello-Susan .text-style-1 {
+  font-weight: 900;
+}
+.Hello-Susan_div {
+  width: 131px;
+  height: 19px;
+  margin: 10px 0 1px 8px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  position: relative;
+  color: #2c3e50;
+}
+.nav-list {
+  list-style-type: none;
+  justify-content: center;
+}
+.nav-list li a {
+  color: #2c3e50;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+}
+/* wellcome */
+
+.Welcome-Rank-div{
+  margin-top:170px;
+}
+.Welcome-to-Rankorder {
+  width: 703px;
+  height: 208px;  
+  font-family: Avenir;
+  font-size: 86px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.67px;
+  color: #323232;
+}
+
+.We-crowdsource-opini {
+  width: 648px;
+  height: 78px;
+  font-family: Avenir;
+  font-size: 21.5px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.81;
+  letter-spacing: normal;
+  color: #626262;
+}
+.We-crowdsource-opini-para {
+  margin-top: 25px;
+  font-size: 21.5px;
+}
+.Rectangle{
+  width: 280px;
+  height: 54px;
+  margin: 40px 22px 219px -4px;
+  padding: 15px 25px 14px;
+  border-radius: 0px 25px 0px 25px !important;
+  background-color: #44ac80 !important;
+  border: none !important;
+  outline: none !important ;
+}
+.Rectangle-Social-Media{
+  width:346px;
+  height: 54px;
+  margin: 40px 22px 219px 20px;
+  padding: 15px 25px 14px;
+  border-radius: 0px 25px 0px 25px !important;
+  background-color: #44ac80 !important;
+  border: none !important;
+  outline: none !important ;
+}
+
+.Browse-College-Ranki {
+  width: 230px;
+  height: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+.Rectangle_social {
+  width: 335px;
+  height: 54px;
+  margin: 41px 563px 218px 9px;
+  padding: 14px 37px 15px;
+  border-radius: 0px 25px 0px 25px !important;
+  background-color: #44ac80 !important;
+  border: none !important;
+  outline: none !important ;
+}
+.Browse-Social-Media {
+  width: 280px;
+  height: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+}
+.Rank-Illustration {
+  width: 640px;
+  height: 615px;
+  margin: 95px 0px 0px 0px;
+  
+}
+
+
+/* .btn-check:active + .btn-outline-success,
+.btn-check:checked + .btn-outline-success,
+.btn-outline-success.active,
+.btn-outline-success.dropdown-toggle.show,
+.btn-outline-success:active {
+  width: 335px;
+  height: 54px;
+  margin: 41px 563px 218px 9px;
+  padding: 14px 37px 15px;
+  border-radius: 0px 25px 0px 25px !important;
+  background-color: #44ac80 !important;
+  border: none !important;
+  outline: none !important ;
+} */

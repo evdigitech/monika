@@ -1,0 +1,128 @@
+.Crowdsourced-College {
+  width: 483px;
+  height: 41px;
+  margin: 107px 99px 30px 346px;
+  font-size: 30px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2c3e50;
+  white-space: nowrap;
+}
+.college-area {
+  /* margin: 90px 0px 50px 0px; */
+}
+
+.Rectangle-Copy-6 {
+  width: 180px;
+  height: 54px;
+  /* margin:  15px 0 0; */
+  padding: 0px 25px 17px 0px;
+  border-radius: 0px 25px 0px 25px;
+  outline: none;
+  border: none;
+}
+.Type-rank-or-name {
+  width: 187px !important;
+  height: 20px;
+  opacity: 0.8;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #77838f;
+  outline: none;
+  border: none;
+  white-space: nowrap;
+}
+.Rectangle-form {
+  float: right;
+margin-top: 95px;
+}
+.Rectangle-Copy-5 {
+  width: 208px;
+  height: 54px;
+  margin: 107px 203px 17px 217px;
+  padding: 0 px 0 0;
+  border-radius: 0px 27px 0px 25px;
+  border: solid 2px#44ac80;
+  /* background-color: #44ac80 !important; */
+}
+.Rectangle-line {
+  width: 120px;
+  height: 3px;
+  margin: 30px 181px 50px 501px;
+  border-radius: 3px;
+  background-color: #44ac80;
+}
+.input-ranking {
+  height: 50px !important;
+  background: white !important;
+  border-radius: 0px 19px 0px 24px;
+  width:185px !important;
+}
+.search_rank_name {
+  width: 166 px;
+  height: 50 px;
+  opacity: 0.8;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  text-align: center;
+  color: #77838f;
+
+  outline: none;
+  border: none;
+  white-space: nowrap;
+}
+.search_btn {
+  width:120px;
+  height: 51px;
+  background-color: #44ac80 !important;
+  border: 1px solid #44ac80 !important;
+  border-radius: 0px 23px 0px 0px !important;
+}
+.search_icon {
+  font-size: 16px;
+}
+
+.start_ranking-info {
+  border-radius: 50px !important;
+  width:89px;
+  background-color: #44ac80 !important;
+  margin-left:30px;
+  padding: 5px 25px 14px;
+  border: 1px solid #44ac80 !important;
+}
+.info_form_check {
+  display: flex;
+  margin: 32px 0px -10px 0px
+}
+.bg {
+  width: 1370px;
+  height: 233px;
+  margin: 45px 199px 40px -50px;
+  padding: 0 31px 0 1px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  color:#2c3e50;
+}
+.Forma-1-copy-6 {
+  width: 78px;
+  height: 35px;
+  padding: 9px 39px 10px 18px;
+  background-color: #ffcd05;
+  color: #fff;
+  position: relative;
+  top:-212px;
+}
+.college_row{
+  margin: 180px 0px 0px 0px;
+}

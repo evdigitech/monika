@@ -1,0 +1,137 @@
+.Which-college-is-mor {
+  width: 715px;
+  height: 55px;
+  margin: 14px 213px 51px 193px;
+  font-family: Avenir;
+  font-size: 40px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+    color:#2c3e50;
+  }
+  .card-content{
+    margin:5px 34px -50px 44px;
+  }
+  .modal-content{
+    border-radius: 22px !important;
+    width: 1337px;
+    height: 814px;
+  }  
+  .modal-header{
+    border-bottom:none !important;
+    margin-bottom:2px;    
+  }
+  .modal-header .btn-close {
+    padding: 0.5rem 0.5rem;
+    margin: 1.7rem 1.7rem -0.5rem auto !important;  
+    font-weight: 800;
+    color:#2c3e50;
+}
+.Voter-Rectangle-modal{
+  width:539px;
+  height: 387px;
+  margin:23px 3px 123px -20px;
+  padding: 39px 21px 43px ;
+  /* background-image: 
+  linear-gradient(to bottom,
+   rgba(0, 0, 0, 0.5), 
+   rgba(0, 0, 0, 0.5)),
+   linear-gradient(to bottom,
+    rgba(255, 255, 255, 0.5), 
+    rgba(0, 0, 0, 0.5)); */
+}
+ .voter-modal{
+  width:100%;
+  height: 387px;   
+  border-radius: 22px;
+  border: solid 1px #979797;
+ } 
+ 
+  
+ .card-body-Earlham-College{
+  margin: -170px 0px 0px 15px;  
+ }
+  .Earlham-College {
+    width: 290px;
+    height: 33px;
+    margin:0px 0px 0px 15px;
+    font-family: Avenir;
+    font-size: 20px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    color: #fff;
+  }
+  .Richmond-IN {
+    width: 154px;
+    height: 18px;
+    margin: 1px 110px 1px 12px;
+    font-family: Avenir;
+    font-size: 13px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.33px;
+    color: #fff;
+  }
+  .Shape {
+    width: 14px;
+    height: 20px;
+    margin: 33px 12px 0 0;
+    background-color:#44ac80;
+  }
+  .More-info {
+    width: 89px;
+    height:34px;
+    font-family: Avenir;
+    font-size: 12px;
+    border-radius: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #fff;
+    background-color:#44ac80;
+border: 1px solid #44ac80;
+  }
+  .Rectangle-More-info {
+    width: 89px;
+    height: 34px;
+    margin: 0px 0px 0 50px;
+    /* padding: 9px 0; */
+    border-radius: 17px;
+    background-color:#44ac80;
+  }
+ 
+    .voting-heading{
+      margin: -163px 0px 0px 10px;
+    }
+    .modal-footer{
+      border-top:none !important
+    }
+    .Log-in-or-Register-t {
+      width: 648px;
+      height: 39px;
+      margin: 139px 473px 0 62px;
+      font-family: Avenir;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.44;
+      letter-spacing: normal;
+      color: #626262;
+      cursor: pointer;
+    }
+    .capther-bg-box{
+      margin: 112px 0px 0px 62px
+    }
+    

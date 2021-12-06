@@ -1,0 +1,5 @@
+export const UNIVERSITY_DATA = "UNIVERSITY_DATA";
+export const UNIVERSITY_DATA_SUCCESS = "UNIVERSITY_DATA_SUCCESS";
+export const UNIVERSITY_DATA_ERROR = "UNIVERSITY_DATA_ERROR";
+
+export default './list/actions';
