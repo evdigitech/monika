@@ -3,9 +3,8 @@ import Navbar from "./Navbar";
 
 function Layout({ children }) {
   return (
-    <div className="container-fluid Header-BackgroundMask">
-      <Navbar />
-     
+    <div className="">
+      <Navbar />     
       <main >
         {children}
         </main>

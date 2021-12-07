@@ -1,3 +1,13 @@
+/* .Header-BackgroundMask {
+  width: 100%;
+  height:882px;
+  margin: 0 0 107px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(156, 216, 190, 0.11),
+    rgba(108, 198, 159, 0.44)
+  );
+  } */
 .Crowdsourced-Social {
     width: 703px;
     height: 208px;
