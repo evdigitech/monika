@@ -18,7 +18,7 @@ import { connect } from "react-redux";
 import { useSelector, useDispatch } from "react-redux";
 
 import { FaRegUser } from "react-icons/fa";
-import ClgRankDetail from "../../univercity/welcome/ClgRankDetail";
+import ClgRankDetail from "./CollegeRankDetail";
 
 function WelcomeRank() {
   const route = useRouter();
@@ -39,7 +39,8 @@ function WelcomeRank() {
   };
   return (
     <>
-      <div className="container">
+      <div className="container-fluid Header-BackgroundMask">
+        <div className="container">
         <Row>
           <Col xs={12} sm={12} md={6} className="wel-rank-col">
             <div className="Welcome-Rank-div">
@@ -115,6 +116,7 @@ function WelcomeRank() {
             </div>
           </Col>
         </Row>
+        </div>
       </div>
       {flag ? <ClgRankDetail /> : ""}
     </>

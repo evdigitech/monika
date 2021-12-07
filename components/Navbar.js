@@ -1,4 +1,4 @@
-import { te } from "react";
+import {useState } from "react";
 import {
   Container,
   Row,
@@ -17,14 +17,20 @@ import { useRouter } from "next/router";
 import { FaRegUser } from "react-icons/fa";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-// import SocialRank from "../pages/univercity/socialRank/SocialRank";
 
 function Navbar() {
+  const router= useRouter()
+  const [detailflag, setDetailFlag] = useState(false)
+
+
+  // const style={
+  //   color:router.pathname === 'univercity/welcome/CollegeDetailId' ? 'red' : 'black',
+  // }
  
   return (
-    <>
-    
-      <div className="container-fluid">
+    <>  
+    {/* "container-fluid Nav-Header-BackgroundMask" */}
+      <div className="container-fluid Nav-Header-BackgroundMask">
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light ">
             <div className="">

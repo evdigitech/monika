@@ -12,7 +12,7 @@ const CollegeDetail = () => {
   const router = useRouter();
   const { id } = router.query;
   const [collegeInfo, setCollegeInfo] = useState([]);
-  const [allSchoolData, setAllSchoolData] = useState([]);
+  const [allDetailData, setAllDetailData] = useState([]);
   let collegeDetail = [];
 
   useEffect(() => {
@@ -38,13 +38,12 @@ const CollegeDetail = () => {
           return item;
         });
         setCollegeInfo(resData)
-        setAllSchoolData(res);
-        console.log("allSchoolDataSSSS::", res);
+        setAllDetailData(res);
+        console.log("allDetailDataSSSS::", res);
       })
       .catch((error) => console.log("College Graph Err::", error));
   };
 
-  // console.log("allSchoolData:::::", allSchoolData);
   const dataValue = [];
   dataValue.push(["Date", "Rank"]);
   collegeInfo&&collegeInfo.map((data) => {
@@ -60,8 +59,8 @@ const CollegeDetail = () => {
       {/* Image section */}
       <div className="row">
         <div className="col-md-12">
-          {console.log("object", allSchoolData.name)}
-          <h1>{allSchoolData.name}</h1>
+          {console.log("object", allDetailData.name)}
+          <h1>{allDetailData.name}</h1>
           <div
             style={{
               justifyContent: "center",
@@ -73,16 +72,18 @@ const CollegeDetail = () => {
             }}
           >
             <img
-              // src=""
-              src={allSchoolData.image}
+              src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
+              // src={allSchoolData.image}
               className="img-fluid compare-card"
               className="compare-card"
               style={{
-                width: "727px",
+                width: "100%",
                 height: "500px",
+                borderRadius:'76px 0px 76px 0px',
+                margin:'0px 0px 0px -1px',
               }}
               alt="img"
-              onClick={() => redirectPage(allSchoolData.description_url)}
+              onClick={() => redirectPage(allDetailData.description_url)}
             />
           </div>
         </div>
@@ -98,28 +99,30 @@ const CollegeDetail = () => {
             padding: "33px",
           }}
         >
-          <div style={{ cursor: "pointer" }}>
+
+          
+          {/* <div style={{ cursor: "pointer" }}>
             <h3 style={{ color: "#00c292" }}>
-              Overview of {allSchoolData.name}
+              Overview of {allDetailData.name}
             </h3>
             <div>
               <div>
                 <b>Rank&nbsp;:</b>
                 <h5 className="d-inline-block mb-0">
-                  &nbsp;{allSchoolData.rank_number}
+                  &nbsp;{allDetailData.rank_number}
                 </h5>
               </div>
               <div>
                 <b>Website&nbsp;:</b>
                 <OverlayTrigger
                   placement="top"
-                  overlay={<Tooltip>{allSchoolData.website}</Tooltip>}
+                  overlay={<Tooltip>{allDetailData.website}</Tooltip>}
                 >
-                  <a href={allSchoolData.website}>
+                  <a href={allDetailData.website}>
                     &nbsp;
                     <u>
-                      {allSchoolData.website
-                        ? allSchoolData.website
+                      {allDetailData.website
+                        ? allDetailData.website
                             .replace(/^(?:https?:\/\/)?(?:www\.)?/i, "")
                             .split("/")[0]
                         : ""}
@@ -129,19 +132,19 @@ const CollegeDetail = () => {
               </div>
 
               <div>
-                <b>Founded&nbsp;:</b>&nbsp;{allSchoolData.founded_date}
+                <b>Founded&nbsp;:</b>&nbsp;{allDetailData.founded_date}
               </div>
               <div>
                 <a
-                  title={allSchoolData.description_url}
-                  onClick={() => redirectPage(allSchoolData.description_url)}
+                  title={allDetailData.description_url}
+                  onClick={() => redirectPage(allDetailData.description_url)}
                 >
                   <b>Description (Wikipedia)&nbsp;:</b>
-                  &nbsp;{allSchoolData.description}
+                  &nbsp;{allDetailData.description}
                 </a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       {/* Graph Section */}
       <div className="row">

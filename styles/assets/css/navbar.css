@@ -8,9 +8,19 @@
   margin: 0%;
   font-family: Avenir;
 }
+.Nav-Header-BackgroundMask{
+  width: 100%;
+  height:100px;
+  margin: 0 0 107px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(156, 216, 190, 0.11),
+    rgba(183, 231, 209, 0.44)
+  );
+}
 .Header-BackgroundMask {
   width: 100%;
-  height: 978px;
+  height:882px;
   margin: 0 0 107px;
   background-image: linear-gradient(
     to bottom,

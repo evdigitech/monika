@@ -71,7 +71,6 @@
     width: 154px;
     height: 18px;
     margin: 1px 110px 1px 12px;
-    font-family: Avenir;
     font-size: 13px;
     font-weight: 900;
     font-stretch: normal;
@@ -89,7 +88,6 @@
   .More-info {
     width: 89px;
     height:34px;
-    font-family: Avenir;
     font-size: 12px;
     border-radius: 17px;
     font-weight: normal;
@@ -112,7 +110,7 @@ border: 1px solid #44ac80;
   }
  
     .voting-heading{
-      margin: -163px 0px 0px 10px;
+      /* margin: -163px 0px 0px 10px; */
     }
     .modal-footer{
       border-top:none !important
@@ -121,7 +119,6 @@ border: 1px solid #44ac80;
       width: 648px;
       height: 39px;
       margin: 139px 473px 0 62px;
-      font-family: Avenir;
       font-size: 16px;
       font-weight: normal;
       font-stretch: normal;

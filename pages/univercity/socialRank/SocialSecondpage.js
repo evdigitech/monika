@@ -65,6 +65,7 @@ function SocialSecondPage({
   };
   return (
     <>
+    <div className="container-fluid Header-BackgroundMask">
       <div className="container">
         <div className="">
           <Row className="college_row">
@@ -245,17 +246,9 @@ function SocialSecondPage({
           </div>
         </div>
       </div>
+      </div>
     </>
   );
 }
 export default SocialSecondPage;
 
-// const mapStateToProps = ({ listReducer }) => {
-//   const {university_details_data, universityLoading } = listReducer;
-//   return {university_details_data, universityLoading };
-// };
-// const mapDispatchToProps = (dispatch) => ({
-//   listDetailsHandlerCall: () => dispatch(universityAction()),
-// });
-
-// export default connect(mapStateToProps, mapDispatchToProps)(SocialSecondPage);
