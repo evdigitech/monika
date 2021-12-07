@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { apiPath } from "../../api/common/commonPath";
+import { apiPath } from "../../api/commonPath";
 import moment from "moment";
 import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
@@ -16,15 +16,10 @@ const CollegeDetail = () => {
   let collegeDetail = [];
 
   useEffect(() => {
-    // setCollegeInfo(compareSchool);
-    // localStorage.setItem("collegeData", JSON.stringify(compareSchool)); 
-    // console.log(JSON.parse(props.router.query.id))
+   
     initialLoad(id);
   }, [id]);
-  // useEffect(() => {
-  //   // collegeDetail = JSON.parse(localStorage.getItem("collegeData"));
-  //   // setAllSchoolData(collegeDetail);
-  // }, []);
+ 
   const initialLoad = (id) => {
     console.log("idddd", id);
     fetch(apiPath + `/api/v1/colleges/${id}/id`, {
@@ -92,33 +87,8 @@ const CollegeDetail = () => {
           </div>
         </div>
       </div>
-      {/* Graph Section */}
-      <div className="row">
-        <div
-          className="col-md-12 compare-card"
-          style={{ height: "500px", cursor: "pointer" }}
-        >         
-          <Chart
-            chartType="Scatter"
-            loader={<div>Loading Chart....</div>}
-            data={dataValue}
-            style={{ margin: "50px auto" }}
-            options={{
-              width: "100%",
-              height: 400,
-              colors: ["#00c292"],
-              backgroundColor: "#f1f8e9",
-              theme: "material",
-              legend: {
-                position: "bottom",
-              },
-            }}
-            rootProps={{ "data-testid": "1" }}
-            legendToggle
-          />
-        </div>
-        {/* Details Section */}
-        <div
+       {/* Details Section */}
+       <div
           className="col-sm-12 compare-card"
           style={{
             display: "flex",
@@ -173,6 +143,32 @@ const CollegeDetail = () => {
             </div>
           </div>
         </div>
+      {/* Graph Section */}
+      <div className="row">
+        <div
+          className="col-md-12 compare-card"
+          style={{ height: "500px", cursor: "pointer" }}
+        >         
+          <Chart
+            chartType="Scatter"
+            loader={<div>Loading Chart....</div>}
+            data={dataValue}
+            style={{ margin: "50px auto" }}
+            options={{
+              width: "100%",
+              height: 400,
+              colors: ["#00c292"],
+              backgroundColor: "#f1f8e9",
+              theme: "material",
+              legend: {
+                position: "bottom",
+              },
+            }}
+            rootProps={{ "data-testid": "1" }}
+            legendToggle
+          />
+        </div>
+       
       </div>
     </div>
   );

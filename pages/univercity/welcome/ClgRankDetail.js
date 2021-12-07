@@ -39,8 +39,9 @@ function ClgRankDetail({
     }
   }, [university_details_data]);
 
-  const schoolDetails = (value) => {
-    console.log("schoolDetails", value);
+  const collegeDetails = (value) => {
+    console.log("collegeDetails", value);
+    router.push(`univercity/welcome/${value}`)
   };
   const MoreInfo = ({ children, college }) => {
     const text = children;
@@ -128,7 +129,7 @@ function ClgRankDetail({
                         >
                           <div
                             clssName="img_base"
-                            onClick={(e) => schoolDetails(college.id)}
+                            onClick={(e) => collegeDetails(college.id)}
                           >
                             <img
                               src={college.image}
@@ -141,7 +142,7 @@ function ClgRankDetail({
                             />
                           </div>
                           <div clssName="Forma-1-copy-6">
-                            <span onClick={(e) => schoolDetails(college.id)}>
+                            <span onClick={(e) => collegeDetails(college.id)}>
                               <strong>#{college.rank_number}</strong>
                             </span>
                           </div>
@@ -149,7 +150,7 @@ function ClgRankDetail({
                         <div className="col-md-5">
                           <div style={{ padding: "1rem 0.5rem 1rem 14px" }}>
                             <h4
-                              onClick={(e) => schoolDetails(college.id)}
+                              onClick={(e) => collegeDetails(college.id)}
                               style={{
                                 cursor: "pointer",
                                 fontWeight: "900",
@@ -178,7 +179,7 @@ function ClgRankDetail({
                             </h6>
                             <MoreInfo
                               school={college}
-                              onClick={(e) => schoolDetails(college.id)}
+                              onClick={(e) => collegeDetails(college.id)}
                             >
                               {college.description}
                             </MoreInfo>
