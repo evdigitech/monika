@@ -98,7 +98,7 @@ margin-top: 95px;
   width:89px;
   background-color: #44ac80 !important;
   margin-left:30px;
-  padding: 5px 25px 14px;
+  /* padding: 5px 25px 14px; */
   border: 1px solid #44ac80 !important;
 }
 .info_form_check {

@@ -16,9 +16,9 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { connect } from "react-redux";
 import { useSelector, useDispatch } from "react-redux";
-
 import { FaRegUser } from "react-icons/fa";
-import ClgRankDetail from "./CollegeRankDetail";
+import CollegeRankDetai from "./CollegeRankDetail";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function WelcomeRank() {
   const route = useRouter();
@@ -27,36 +27,35 @@ function WelcomeRank() {
   const [flag, setFlag] = useState(false);
 
   const dispatch = useDispatch();
- 
+
   const clgRankHandler = (val) => {
-    console.log("kkkk");
     setFlag(true);
   };
 
   const socilMediaHandler = (val) => {
-    console.log("socialll");
     route.push("/univercity/socialRank/SocialRank");
   };
+
   return (
     <>
       <div className="container-fluid Header-BackgroundMask">
         <div className="container">
-        <Row>
-          <Col xs={12} sm={12} md={6} className="wel-rank-col">
-            <div className="Welcome-Rank-div">
-              <span className="Welcome-to-Rankorder">
-                Welcome to Rankordered
-              </span>
-              <div>
-                <span className="We-crowdsource-opini">
-                  We crowdsource opinions from hundreds of thousands of users to
-                  obtain a real-time, accurate ranking of cultural items of
-                  importance.
+          <Row>
+            <Col xs={12} sm={12} md={6} className="wel-rank-col">
+              <div className="Welcome-Rank-div">
+                <span className="Welcome-to-Rankorder">
+                  Welcome to Rankordered
                 </span>
+                <div>
+                  <span className="We-crowdsource-opini">
+                    We crowdsource opinions from hundreds of thousands of users
+                    to obtain a real-time, accurate ranking of cultural items of
+                    importance.
+                  </span>
+                </div>
               </div>
-            </div>
-            {/* d-md-block */}
-            {/* <div className="d-md-block">
+              {/* d-md-block */}
+              {/* <div className="d-md-block">
               <Row>
                 <Col md={5}>
                   <Button
@@ -82,45 +81,83 @@ function WelcomeRank() {
                 </Col>
               </Row>
             </div> */}
-            <div className="">
-              <Dropdown>
-                <Dropdown.Toggle className="" id="dropdown-basic Rectangle">
-                  Browse College Rankings
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item
-                    href="#/action-1"
-                    value={clgRank}
-                    onClick={() => clgRankHandler()}
-                  >
+              <div className="">
+                {/* <Dropdown classname="dropdown-welcome-div">
+                  <Dropdown.Toggle className="" id="dropdown-basic-Rectangle">
                     Browse College Rankings
-                  </Dropdown.Item>
-                  <Dropdown.Item
-                    href="#/action-1"
-                    onClick={() => socilMediaHandler()}
-                  >
-                    Browse Social Media Rankings
-                  </Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-            </div>
-          </Col>
-          <Col xs={12} sm={12} md={6} className="wel-rank-col-img">
-            <div className="Rank-Illustration">
-              <Image
-                src={illustration}
-                alt="illustration"
-                className=""
-                height={520}
-              />
-            </div>
-          </Col>
-        </Row>
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu id="dropdown-menu-rectangle">
+                    <Dropdown.Item
+                      id="dropdown-menu-item"
+                      href="#/action-1"
+                      value={clgRank}
+                      onClick={() => clgRankHandler()}
+                    >
+                      Browse College Rankings
+                    </Dropdown.Item>
+                    <Dropdown.Item id="dropdown-menu-item"
+                      href="#/action-1"
+                      onClick={() => socilMediaHandler()}
+                    >
+                      Browse Social Media Rankings
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown> */}
+              </div>
+            </Col>
+            <Col xs={12} sm={12} md={6} className="wel-rank-col-img">
+              <div className="Rank-Illustration">
+                <Image
+                  src={illustration}
+                  alt="illustration"
+                  className=""
+                  height={520}
+                />
+              </div>
+            </Col>
+          </Row>
         </div>
       </div>
-      {flag ? <ClgRankDetail /> : ""}
+      {flag ? <CollegeRankDetai /> : ""}
     </>
   );
 }
 export default WelcomeRank;
 
+// import { useState } from "react";
+// import { Dropdown } from "react-bootstrap";
+
+// function WelcomeRank() {
+//   const [showMedialRank, setShowMediaRank] = useState();
+
+//   const socialMediaHandler = (e) => {
+//     console.log("dfskjbfk");
+//     setShowMediaRank(true);
+//   };
+//   return (
+//     <div>
+//       <div className="" onClick={(e) => socialMediaHandler()}>
+//         {["down"].map((direction) => (
+//           <Dropdown
+//           as={Dropdown}
+//           key={direction}
+//           id={`dropdown-drop-${direction}`}
+//           drop={direction}
+//           variant="secondry"
+//           title={`Drop ${direction}`}>
+//             <Dropdown.Toggle variant="success" id="dropdown-basic-Rectangle">
+//               Dropdown Button
+//             </Dropdown.Toggle>
+//             <Dropdown.Menu id="dropdown-menu-rectangle">
+//               <Dropdown.Item href="#/action-1" id="dropdown-menu-item">Action</Dropdown.Item>
+//               <Dropdown.Item href="#/action-2" id="dropdown-menu-item">Another action</Dropdown.Item>
+//             </Dropdown.Menu>
+//           </Dropdown>
+//         ))}
+//       </div>
+
+//     </div>
+//   );
+// }
+
+// export default WelcomeRank;

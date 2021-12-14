@@ -44,7 +44,6 @@ function SocialSecondPage({
       allCollegeData(school);
       setMoreInfo(!isMoreInfo);
       if (allCollegeData.length != 2) {
-        history.push("/details-university");
       }
     };
     return (
@@ -65,17 +64,17 @@ function SocialSecondPage({
   };
   return (
     <>
-    <div className="container-fluid Header-BackgroundMask">
+    <div className="">
       <div className="container">
         <div className="">
-          <Row className="college_row">
+          <Row className="social_student_college_row">
             <Col sm={12} md={8} lg={12} xl={8} className="list-college-rank">
               <div className="Crowdsourced-College crowdsourced-college-mobile">
                 Discover the most engaging content
               </div>
             </Col>
             <Col sm={12} md={4} lg={4} xl={4} className="list-college-input">
-              <div className="Rectangle-Copy-5">
+              <div className="social-student-Rectangle-Copy-5">
                 <form className="  d-flex" action="/action_page.php">
                   <input
                     className="Rectangle-Copy-6 input-ranking"
@@ -145,7 +144,7 @@ function SocialSecondPage({
                       >
                         <div
                           className="col-md-4 ranking-img"
-                          style={{ padding: "0px" }}
+                          style={{ padding: "0px"}}
                         >
                           <div clssName="img_base">
                             <img

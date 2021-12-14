@@ -9,7 +9,7 @@
 }
 @media (max-width: 1920px) {
   .college_row {
-    margin-top:125px !important;
+    margin-top:97px !important;
   }
   .Rectangle-Copy-5 {
     width: 248px;
@@ -36,6 +36,23 @@
   }
   .ranking-img {
     height: 233px;
+  }
+  .list-college{
+    margin:0px 0px 0px 0px;
+  }
+  .social_student_college_row{
+    margin-top:143px !important;
+  }
+  .social-student-Rectangle-Copy-5{
+    width: 248px;
+    height: 54px;
+    width: 248px;
+    height: 54px;
+    margin: 100px 203px 17px 183px;
+    padding: 0 21px 0 0;
+    border-radius: 0px 25px 0px 25px;
+    border: solid 2px #44ac80;
+    background-color: #44ac80;
   }
   
 }
@@ -263,6 +280,9 @@
     display: flex;
     width: 100%;
     overflow: auto;
+  }
+  .Nav-Header-BackgroundMask {
+    width:375px;
   }
   .Header-BackgroundMask {
     width: 375px;

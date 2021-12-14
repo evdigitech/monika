@@ -45,7 +45,6 @@ function ListChart({school}) {
  }, []);
 
  const chartData = [["Date", "Rank", "Elo rating"]];
- console.log('chartDataaaa')
  ratingData.map((data) => {
    chartData.push([data[0], data[1], data[2]]);
  });

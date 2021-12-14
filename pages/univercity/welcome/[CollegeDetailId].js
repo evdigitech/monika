@@ -1,28 +1,29 @@
-import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { apiPath } from "../../api/commonPath";
 import moment from "moment";
 import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Image from "next/image";
+import { useRouter } from "next/router";
+import { Button} from "react-bootstrap";
 
 const { Chart } = require("react-google-charts");
 
 const CollegeDetail = () => {
+
   const router = useRouter();
-  const { id } = router.query;
+ const {CollegeDetailId:id}= router.query
+
   const [collegeInfo, setCollegeInfo] = useState([]);
   const [allDetailData, setAllDetailData] = useState([]);
-  let collegeDetail = [];
 
   useEffect(() => {
-   
-    initialLoad(id);
+      initialLoad(id);     
   }, [id]);
- 
+
   const initialLoad = (id) => {
     console.log("idddd", id);
-    fetch(apiPath + `/api/v1/colleges/${id}/id`, {
+    fetch(apiPath +`/api/v1/colleges/${id}/id`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -37,7 +38,7 @@ const CollegeDetail = () => {
           }
           return item;
         });
-        setCollegeInfo(resData)
+        setCollegeInfo(resData);
         setAllDetailData(res);
         console.log("allDetailDataSSSS::", res);
       })
@@ -45,11 +46,12 @@ const CollegeDetail = () => {
   };
 
   const dataValue = [];
+  console.log('dataValue',dataValue)
   dataValue.push(["Date", "Rank"]);
-  collegeInfo&&collegeInfo.map((data) => {
-    dataValue.push([data[0], data[1]]);
-  });
-
+  collegeInfo &&
+    collegeInfo.map((data) => {
+      dataValue.push([data[0], data[1]]);
+    });
 
   const redirectPage = (url) => {
     window.open(url, "_blank");
@@ -57,10 +59,9 @@ const CollegeDetail = () => {
   return (
     <div className="container">
       {/* Image section */}
-      <div className="row">
+      <div className="row Detial-page-div">
         <div className="col-md-12">
           {console.log("object", allDetailData.name)}
-          <h1>{allDetailData.name}</h1>
           <div
             style={{
               justifyContent: "center",
@@ -71,16 +72,16 @@ const CollegeDetail = () => {
               cursor: "pointer",
             }}
           >
+          <h1 className="college-detial-name">{allDetailData.name}</h1>
             <img
               src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg"
-              // src={allSchoolData.image}
-              className="img-fluid compare-card"
-              className="compare-card"
+              // src={allDetailData.image}
+              className="Detial-page-card"
               style={{
                 width: "100%",
-                height: "500px",
-                borderRadius:'76px 0px 76px 0px',
-                margin:'0px 0px 0px -1px',
+                height: "448px",
+                borderRadius: "76px 0px 76px 0px",
+                margin: "0px 0px 0px -1px",
               }}
               alt="img"
               onClick={() => redirectPage(allDetailData.description_url)}
@@ -88,20 +89,35 @@ const CollegeDetail = () => {
           </div>
         </div>
       </div>
-       {/* Details Section */}
-       <div
-          className="col-sm-12 compare-card"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: "50px",
-            padding: "33px",
-          }}
-        >
+      {/* Details Section */}
+      <div
+        className="col-sm-12 compare-card"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginTop: "50px",
+          padding: "33px",
+        }}
+      >
+        <div className="row">
+         <div className="col-sm-12 col-md-6">
+         <a
+            title={allDetailData.description_url}
+            onClick={() => redirectPage(allDetailData.description_url)}
+          >
+            <b>Description (Wikipedia)&nbsp;:</b>
+            &nbsp;{allDetailData.description}
+          </a>
+         </div>
+         <div className="col-sm-12 col-md-6">
+           <Button>
+             <span>From : Wikipedia </span>
+           </Button>
+         </div>
+        </div>
 
-          
-          {/* <div style={{ cursor: "pointer" }}>
+        {/* <div style={{ cursor: "pointer" }}>
             <h3 style={{ color: "#00c292" }}>
               Overview of {allDetailData.name}
             </h3>
@@ -145,13 +161,13 @@ const CollegeDetail = () => {
               </div>
             </div>
           </div> */}
-        </div>
+      </div>
       {/* Graph Section */}
       <div className="row">
         <div
           className="col-md-12 compare-card"
           style={{ height: "500px", cursor: "pointer" }}
-        >         
+        >
           <Chart
             chartType="Scatter"
             loader={<div>Loading Chart....</div>}
@@ -171,10 +187,27 @@ const CollegeDetail = () => {
             legendToggle
           />
         </div>
-       
       </div>
     </div>
   );
 };
 
 export default CollegeDetail;
+
+
+// import React from 'react'
+// import {useRouter} from "next/router"
+
+// function CollegeDetailId() {
+// const router = useRouter()
+// console.log("router",router)
+// const {CollegeDetailId:id}= router.query
+// console.log('id',id)
+//   return (
+//     <div>
+//       <h1>CollegeDetailId</h1>
+//     </div>
+//   )
+// }
+
+// export default CollegeDetailId

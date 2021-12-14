@@ -10,7 +10,7 @@ import ListChart from "../ListChart";
 import { universityAction } from "../../../redux/list/actions";
 
 
-function ClgRankDetail({
+function CollegeRankDetai({
   listDetailsHandlerCall,
   universityListReducer,
   allCollegeData,
@@ -234,5 +234,5 @@ function ClgRankDetail({
   );
 }
 
-export default ClgRankDetail;
+export default CollegeRankDetai;
 

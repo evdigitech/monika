@@ -10,8 +10,13 @@ import { BsGeoAlt } from "react-icons/bs";
 import ReCAPTCHA from "react-google-recaptcha";
 import Link from "next/link";
 import { BsFillFlagFill } from "react-icons/bs";
+import { useRouter } from "next/router";
+// import CollegeDetail from "../univercity/welcome/[CollegeDetailId]";
 
 function VoteForm({ show, close }) {
+  const router = useRouter();
+
+
   const { handleSubmit } = useForm();
   const [selectedCollege, setSelectedCollege] = useState();
   const [clgNotSelect, setClgNotSelect] = useState(false);
@@ -27,6 +32,7 @@ function VoteForm({ show, close }) {
       setShowError(true);
       return;
     }
+    router.push("./univercity/welcome/[CollegeDetailId]")
   };
 
   const submitVote = (value) => {
@@ -62,8 +68,14 @@ function VoteForm({ show, close }) {
     // return {voting,votingError};
   }, []);
 
+const voterMoreInfoHandler=(value)=>{
+  console.log("voterMoreInfoHandler")
+  router.push(`../univercity/welcome/${value}`)
+}
+
   return (
     <>
+    {/* <CollegeDetail/> */}
       <Modal
         show={show}
         onHide={close}
@@ -141,7 +153,9 @@ function VoteForm({ show, close }) {
                               </Col>
                               <Col className="earlham-modal-more">
                                 <div className="Rectangle-More-info">
-                                  <button className="More-info">
+                                  <button className="More-info" 
+                                  onClick={()=>voterMoreInfoHandler()}
+                                  >
                                     More Info
                                   </button>
                                 </div>

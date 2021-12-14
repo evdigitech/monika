@@ -4,7 +4,7 @@ import WelcomeRank from "./univercity/welcome/WelcomeRank";
 function index() {
   return (
     <>
-  <div className="container-fluid Header-BackgroundMask">
+  <div className="">
   <Home/>
     <WelcomeRank/>
   </div>

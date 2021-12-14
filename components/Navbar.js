@@ -1,4 +1,4 @@
-import {useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Container,
   Row,
@@ -15,22 +15,35 @@ import illustration from "../styles/assets/images/rank-illustration.png";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FaRegUser } from "react-icons/fa";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function Navbar() {
-  const router= useRouter()
-  const [detailflag, setDetailFlag] = useState(false)
+  const router = useRouter();
+  const [showWhite, setShowWhite] = useState(true);
+const [showGreen,setShowGreen]=useState();
+  useEffect(() => {
+    if (router.pathname === "/univercity/welcome/[CollegeDetailId]") {
+      setShowWhite(true);
+    } else {
+      setShowWhite(false);
+    }
+  }, [router]);
 
-
-  // const style={
-  //   color:router.pathname === 'univercity/welcome/CollegeDetailId' ? 'red' : 'black',
-  // }
- 
+  useEffect(() => {
+   if(router.pathname === "/univercity/socialRank/SocialRank"){
+     setShowGreen(true);
+   }else{
+     setShowGreen(false);
+   }
+  }, [router])
   return (
-    <>  
-    {/* "container-fluid Nav-Header-BackgroundMask" */}
-      <div className="container-fluid Nav-Header-BackgroundMask">
+    <>
+      <div
+        className={`container-fluid ${
+          !showWhite ? "Nav-Header-BackgroundMask" : "Nav-detail"
+          // , // !showGreen ? "Nav-Header-BackgroundMask":"Nav-student"
+        }`}
+      >
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light ">
             <div className="">
@@ -78,13 +91,13 @@ function Navbar() {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/">
+                    <Link href="/comman/About">
                       <a>About</a>
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/">
+                    <Link href="/comman/Contact">
                       <a>Contact</a>
                     </Link>
                   </li>
@@ -105,7 +118,7 @@ function Navbar() {
                 </form>
               </div>
             </div>
-          </nav>            
+          </nav>
         </div>
       </div>
     </>

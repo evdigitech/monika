@@ -1,9 +1,20 @@
-import { children } from "react";
+import { children,useState,useEffect} from "react";
 import Navbar from "./Navbar";
+import router, { useRouter } from "next/router";
+
 
 function Layout({ children }) {
+  // const[showWhite,setShowWhite]=useState(true)
+
+  // useEffect(() => {
+  //  if(router.pathname==="/univercity/welcome/[CollegeDetailId]"){
+  //   setShowWhite(true)
+  //  }else{
+  //   setShowWhite(false)
+  //  }
+  // }, [router])
   return (
-    <div className="">
+    <div >
       <Navbar />     
       <main >
         {children}
