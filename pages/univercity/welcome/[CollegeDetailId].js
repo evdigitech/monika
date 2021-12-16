@@ -111,9 +111,17 @@ const CollegeDetail = () => {
           </a>
          </div>
          <div className="col-sm-12 col-md-6">
-           <Button>
+          <div className="w-50 bg-success">
+            <div className="row">
+              <div className="col col-sm-6 col-md-6">slkjdks</div>
+              <div className="col col-sm-6 col-md-6">slkjdks</div>
+
+            </div>
+          <div className="text-center">
+          <Button>
              <span>From : Wikipedia </span>
-           </Button>
+           </Button></div>
+          </div>
          </div>
         </div>
 
