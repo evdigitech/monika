@@ -82,27 +82,27 @@ function WelcomeRank() {
               </Row>
             </div> */}
               <div className="">
-                {/* <Dropdown classname="dropdown-welcome-div">
-                  <Dropdown.Toggle className="" id="dropdown-basic-Rectangle">
-                    Browse College Rankings
-                  </Dropdown.Toggle>
-                  <Dropdown.Menu id="dropdown-menu-rectangle">
-                    <Dropdown.Item
-                      id="dropdown-menu-item"
-                      href="#/action-1"
-                      value={clgRank}
-                      onClick={() => clgRankHandler()}
-                    >
+                  <Dropdown classname="dropdown-welcome-div">
+                    <Dropdown.Toggle className="" id="dropdown-basic-Rectangle">
                       Browse College Rankings
-                    </Dropdown.Item>
-                    <Dropdown.Item id="dropdown-menu-item"
-                      href="#/action-1"
-                      onClick={() => socilMediaHandler()}
-                    >
-                      Browse Social Media Rankings
-                    </Dropdown.Item>
-                  </Dropdown.Menu>
-                </Dropdown> */}
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu id="dropdown-menu-rectangle">
+                      <Dropdown.Item
+                        id="dropdown-menu-item"
+                        href="#/action-1"
+                        value={clgRank}
+                        onClick={() => clgRankHandler()}
+                      >
+                        Browse College Rankings
+                      </Dropdown.Item>
+                      <Dropdown.Item id="dropdown-menu-item"
+                        href="#/action-1"
+                        onClick={() => socilMediaHandler()}
+                      >
+                        Browse Social Media Rankings
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
               </div>
             </Col>
             <Col xs={12} sm={12} md={6} className="wel-rank-col-img">
@@ -124,40 +124,3 @@ function WelcomeRank() {
 }
 export default WelcomeRank;
 
-// import { useState } from "react";
-// import { Dropdown } from "react-bootstrap";
-
-// function WelcomeRank() {
-//   const [showMedialRank, setShowMediaRank] = useState();
-
-//   const socialMediaHandler = (e) => {
-//     console.log("dfskjbfk");
-//     setShowMediaRank(true);
-//   };
-//   return (
-//     <div>
-//       <div className="" onClick={(e) => socialMediaHandler()}>
-//         {["down"].map((direction) => (
-//           <Dropdown
-//           as={Dropdown}
-//           key={direction}
-//           id={`dropdown-drop-${direction}`}
-//           drop={direction}
-//           variant="secondry"
-//           title={`Drop ${direction}`}>
-//             <Dropdown.Toggle variant="success" id="dropdown-basic-Rectangle">
-//               Dropdown Button
-//             </Dropdown.Toggle>
-//             <Dropdown.Menu id="dropdown-menu-rectangle">
-//               <Dropdown.Item href="#/action-1" id="dropdown-menu-item">Action</Dropdown.Item>
-//               <Dropdown.Item href="#/action-2" id="dropdown-menu-item">Another action</Dropdown.Item>
-//             </Dropdown.Menu>
-//           </Dropdown>
-//         ))}
-//       </div>
-
-//     </div>
-//   );
-// }
-
-// export default WelcomeRank;
