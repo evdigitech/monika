@@ -5,15 +5,14 @@ import ListChart from "../ListChart";
 import { useSelector, useDispatch } from "react-redux";
 import { universityAction } from "../../../redux//list/actions";
 import { useRouter } from "next/router";
+import EntertainmentCom from "../studentContent/EntertainmentCom"
 
 
 function SocialSecondPage({ 
   allCollegeData,
 }) {
-
   const dispatch = useDispatch();
   const router = useRouter();
-
 
   const [studentData, setStudentData] = useState([]);
   const [school, setSchool] = useState([]);
@@ -46,6 +45,10 @@ function SocialSecondPage({
       if (allCollegeData.length != 2) {
       }
     };
+
+    const onEntertainmentHandler=()=>{
+
+    }
     return (
       <p
         className="text"
@@ -64,6 +67,7 @@ function SocialSecondPage({
   };
   return (
     <>
+    <EntertainmentCom />
     <div className="">
       <div className="container">
         <div className="">
@@ -91,7 +95,8 @@ function SocialSecondPage({
           </Row>
           <div className="row engaging content">
             <div className="engaging_div">
-              <Button className="Rectangle-17-copy">
+              <Button className="Rectangle-17-copy"
+              onClick={()=>onEntertainmentHandler()}>
                 <span className="Start-ranking-active engaging-content-group">
                   Entertainment
                 </span>

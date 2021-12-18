@@ -137,7 +137,7 @@ function SocialRank() {
                   </Row> */}
                 </div>
                 <div className="">
-                <Dropdown>
+                <Dropdown className="dropdown-welcome-div">
                 <Dropdown.Toggle className="" id="dropdown-basic-Rectangle">
                   Browse College Rankings
                 </Dropdown.Toggle>
