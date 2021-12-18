@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import {
   Container,
+  Navbar,
+  Nav,
+  Form,
+  FormControl,
   Row,
   Col,
   Button,
-  Dropdown,
-  DropdownButton,
-  ToggleButtonGroup,
-  ToggleButto,
 } from "react-bootstrap";
 import Image from "next/image";
 import rank from "../styles/assets/images/ranklogo.jpg";
@@ -17,10 +17,10 @@ import { useRouter } from "next/router";
 import { FaRegUser } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function Navbar() {
+function NavbarComponent() {
   const router = useRouter();
   const [showWhite, setShowWhite] = useState(true);
-const [showGreen,setShowGreen]=useState();
+  const [showGreen, setShowGreen] = useState();
   useEffect(() => {
     if (router.pathname === "/univercity/welcome/[CollegeDetailId]") {
       setShowWhite(true);
@@ -30,33 +30,25 @@ const [showGreen,setShowGreen]=useState();
   }, [router]);
 
   useEffect(() => {
-   if(router.pathname === "/univercity/socialRank/SocialRank"){
-     setShowGreen(true);
-   }else{
-     setShowGreen(false);
-   }
-  }, [router])
+    if (router.pathname === "/univercity/socialRank/SocialRank") {
+      setShowGreen(true);
+    } else {
+      setShowGreen(false);
+    }
+  }, [router]);
   return (
     <>
       <div
         className={`container-fluid ${
           !showWhite ? "Nav-Header-BackgroundMask" : "Nav-detail"
-          // , // !showGreen ? "Nav-Header-BackgroundMask":"Nav-student"
         }`}
       >
-        <div className="container">
-          <nav className="navbar navbar-expand-lg navbar-light ">
-            <div className="">
+        <Navbar expand="lg">
+          <Container>
+            <Navbar.Brand href="#">
               <div className="Large_Rank_ordered_Logo d-none d-md-block">
                 <Link href="/">
-                  <a className="navbar-brand">
-                    <Image
-                      src={rank}
-                      alt="rankorder"
-                      width={100}
-                      height={100}
-                    />
-                  </a>
+                  <Image src={rank} alt="rankorder" width={100} height={100} />
                 </Link>
               </div>
               <div className="d-md-none pt-4">
@@ -66,45 +58,23 @@ const [showGreen,setShowGreen]=useState();
                   </span>
                 </Link>
               </div>
-            </div>
-
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              className="collapse navbar-collapse "
-              id="navbarSupportedContent"
-            >
-              <div className="Home-About-Contact">
-                <ul className="navbar-nav me-auto  mb-2 mb-lg-0 nav-list d-flex">
-                  <li className="nav-item">
-                    <Link href="/">
-                      <a>Home</a>
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link href="/comman/About">
-                      <a>About</a>
-                    </Link>
-                  </li>
-
-                  <li className="nav-item">
-                    <Link href="/comman/Contact">
-                      <a>Contact</a>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="Rectangle-17-copy-nav">
-                <form className="d-flex ">
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="navbarScroll" />
+            <Navbar.Collapse id="navbarScroll">
+              <Nav className="mx-auto my-2 my-lg-0" navbarScroll>
+                <Nav.Link href="/">
+                  <span className="nav-link">Home</span>
+                </Nav.Link>
+                <Nav.Link href="/comman/About">
+                  <span className="nav-link">About</span>
+                </Nav.Link>
+                <Nav.Link href="/comman/Contact">
+                  <span className="nav-link">Contact</span>
+                </Nav.Link>
+              </Nav>
+              <div className="div-end-line d-md-none pb-4"><hr/></div>
+              <div>
+                <Form className="d-flex">
                   <Button className="start_ranking">
                     <span className="Start-ranking">Start ranking</span>
                   </Button>
@@ -115,14 +85,14 @@ const [showGreen,setShowGreen]=useState();
                       <span className="text-style-1">&nbsp;&nbsp;Susan</span>
                     </span>
                   </div>
-                </form>
+                </Form>
               </div>
-            </div>
-          </nav>
-        </div>
-      </div>
+            </Navbar.Collapse>
+          </Container>
+        </Navbar>
+      </div>    
     </>
   );
 }
 
-export default Navbar;
+export default NavbarComponent;
