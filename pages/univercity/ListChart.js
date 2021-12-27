@@ -49,8 +49,8 @@ function ListChart({school}) {
    chartData.push([data[0], data[1], data[2]]);
  });
     return (
-        <div>
-            {chatShow ? (
+         <div>
+         {/*   {chatShow ? (
         <Chart
           width={"100%"}
           height={"220px"}
@@ -75,7 +75,7 @@ function ListChart({school}) {
                 Rank: {
                   label: "Rank",
                   minValue: 0,
-                  maxValue: 100,                  
+                  maxValue: 1,                  
                 },
                 ticks: [
                   0,
@@ -113,8 +113,34 @@ function ListChart({school}) {
         />
    ) : (
         ""
-      )} 
+      )}  */}
+
+<Chart
+  width={'600px'}
+  height={'400px'}
+  chartType="LineChart"
+  loader={<div>Loading Chart</div>}
+  data={[
+    ['x', 'dogs'],
+    [0],
+    [1],
+    [2],
+    [3],
+    [4],
+    
+  ]}
+  options={{
+    hAxis: {
+      title: 'Time',
+    },
+    vAxis: {
+      title: 'Popularity',
+    },
+  }}
+  rootProps={{ 'data-testid': '1' }}
+/>
         </div>
+        
     )
 }
 

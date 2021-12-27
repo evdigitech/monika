@@ -127,15 +127,18 @@
     letter-spacing: normal;
     color: #fff;
   }
-  /* .Detial-page-div{
-    width: 1202px;
-    height: 448px;
-    padding: 85px 71px 167px 73px; 
-   transform: rotate(-180deg);
-    border-radius: 76px;
-    background-image: linear-gradient(to bottom,
-     rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-     linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5));  
-  } */
-
+  .img_base_rank{
+    
+    cursor: pointer;
+  }
+  .img_base>span,.img_base>span>span,.img_base>span>span>img{
+    width: 100% !important;
+    height: 233px !important;
+  }
+ 
+  .uuu {
+    background: yellowgreen;
+    clip-path: polygon(66% 0, 100% 50%, 66% 100%, 0 100%, 0 0);
+    width: 50px;
+  }
   

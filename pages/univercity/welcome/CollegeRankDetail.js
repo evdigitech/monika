@@ -9,8 +9,7 @@ import { useSelector, useDispatch } from "react-redux";
 import ListChart from "../ListChart";
 import { universityAction } from "../../../redux/list/actions";
 
-import Image from "next/image"
-
+import Image from "next/image";
 
 function CollegeRankDetai({
   listDetailsHandlerCall,
@@ -43,7 +42,7 @@ function CollegeRankDetai({
 
   const collegeDetails = (value) => {
     console.log("collegeDetails", value);
-    router.push(`univercity/welcome/${value}`)
+    router.push(`univercity/welcome/${value}`);
   };
   const MoreInfo = ({ children, college }) => {
     const text = children;
@@ -134,17 +133,24 @@ function CollegeRankDetai({
                           >
                             <Image
                               src={college.image}
+                              className="img_base_rank"
                               alt="Images of College"
-                              style={{
-                                cursor: "pointer",
-                                width: "100%",
-                                height: "233px",
-                              }}
+                              width={400}
+                              height={233}
+                              // layout="fill"
+                              // style={{
+                              //   cursor: "pointer",
+                              //   width: "100%",
+                              //   height: "233px",
+                              // }}
+                              
                             />
                           </div>
                           <div clssName="Forma-1-copy-6">
                             <span onClick={(e) => collegeDetails(college.id)}>
-                              <strong>#{college.rank_number}</strong>
+                              <div className="uuu text-white ps-2">
+                                <strong>#{college.rank_number}</strong>
+                              </div>
                             </span>
                           </div>
                         </div>
@@ -231,10 +237,8 @@ function CollegeRankDetai({
           </div>
         </div>
       </div>
-
     </>
   );
 }
 
 export default CollegeRankDetai;
-
