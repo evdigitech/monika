@@ -4,3 +4,643 @@
 .container-fluid{
     width:none;
 }
+@import "../styles/assets/css/navbar.css";
+@import "../styles/assets/css/list.css";
+@import "../styles/assets/css/voter.css";
+@import "../styles/assets/css/socialRank.css";
+
+
+/* @import "./navbar.css";
+@import "./list.css";
+@import "./voter.css";
+@import "./socialRank.css"; */
+
+.container-fluid {
+  padding: 0px;
+  margin: 0px;
+}
+@media (max-width: 1920px) {
+  .college_row {
+    margin-top: 97px !important;
+  }
+  .Rectangle-Copy-5 {
+    width: 248px;
+    height: 54px;
+    width: 248px;
+    height: 54px;
+    margin: 0px 203px 17px 183px;
+    padding: 0 21px 0 0;
+    border-radius: 0px 25px 0px 25px;
+    border: solid 2px #44ac80;
+    background-color: #44ac80;
+  }
+  .Rectangle-Copy-6 {
+    width: 194px !important;
+    height: 54px;
+    margin: 0 15px 0 0;
+    padding: 17px 25px 17px 26px;
+    border-radius: 0px 25px 0px 25px;
+    border: solid 2px #44ac80;
+    background-color: #fff;
+  }
+  .img_base {
+    height: 233px;
+  }
+  .ranking-img {
+    height: 233px;
+  }
+  .list-college {
+    margin: 0px 0px 0px 0px;
+  }
+  .social_student_college_row {
+    margin-top: 143px !important;
+  }
+  .social-student-Rectangle-Copy-5 {
+    width: 248px;
+    height: 54px;
+    width: 248px;
+    height: 54px;
+    margin: 100px 203px 17px 183px;
+    padding: 0 21px 0 0;
+    border-radius: 0px 25px 0px 25px;
+    border: solid 2px #44ac80;
+    background-color: #44ac80;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .Rectangle-17-copy-nav {
+    display: flex;
+    height: 43px;
+    padding: 12px 16px 12px 17px;
+  }
+  .start_ranking {
+    border-radius: 50px !important;
+    width: 136px;
+    background-color: #44ac80 !important;
+    margin: 1px 22px 0px 1px;
+    padding: 10px 25px 12px;
+    border: 1px solid #44ac80 !important;
+    height: 53px;
+  }
+}
+@media (max-width: 1024px) {
+  .Nav-Header-BackgroundMask {
+    width: 1024px;
+  }
+  .Header-BackgroundMask {
+    width: 1024px;
+    height: 763px;
+    margin: 0 0 84px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(156, 216, 190, 0.11),
+      rgba(108, 198, 159, 0.44)
+    );
+  }
+  .Large_Rank_ordered_Logo {
+    width: 83px;
+    height: 83px;
+    margin: 0 208px 0 0;
+  }
+  .Home-About-Contact {
+    width: 282px;
+    height: 22px;
+    margin: 31px 18px 30px 29px;
+    font-size: 16px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2c3e50;
+  }
+
+  .Rectangle-17-copy {
+    height: 43px;
+    padding: 0px 16px 12px 17px;
+  }
+  .Welcome-to-Rankorder {
+    width: 428px;
+    height: 164px;
+    margin: 0 22px 21px 0;
+    font-size: 60px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.47px;
+    color: #323232;
+  }
+
+  .We-crowdsource-opini {
+    width: 428px;
+    height: 117px;
+    margin: 21px 22px 29px 0;
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.29;
+    letter-spacing: normal;
+    color: #626262;
+  }
+  #dropdown-basic {
+    height: 96px;
+    margin: 29px 185px 0 0;
+    padding: 0 0 14px;
+    border-radius: 21px;
+    background-color: #77d2a9;
+  }
+  .dropdown-toggle {
+    width: 265px;
+    height: 45px;
+    margin: 12px 0 16px 18px;
+    border-radius: 0px 0px 0px 21px;
+    background-color: #44ac80;
+  }
+
+  .show > .btn-primary.dropdown-toggle {
+    width: 265px;
+    height: 45px;
+    border-radius: 0px 21px 0px 0px !important;
+    background-color: #44ac80;
+  }
+  .dropdown-menu {
+    width: 265px;
+    height: 45px;
+    background-color: #8fdbbc !important;
+  }
+  .dropdown-menu.show {
+    width: 265px;
+    height: 45px;
+    border-radius: 0px 0px 0px 21px;
+    background-color: #8fdbbc;
+  }
+  .dropdown-item {
+    width: 265px;
+    height: 45px;
+    color: #fff !important;
+    background-color: #8fdbbc !important;
+    border-radius: 0px 0px 0px 21px;
+  }
+
+  .Rank-Illustration {
+    width: 405px;
+    height: 388px;
+    margin: 95px 0px 0px 0px;
+  }
+  .list-college-rank {
+    display: flex;
+  }
+  .Crowdsourced-College {
+    width: 542px;
+    height: 41px;
+    margin: 126px 241px 21px;
+    font-family: Avenir;
+    font-size: 30px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--dark-grey-blue);
+  }
+  .Rectangle-Copy-5 {
+    width: 248px;
+    height: 54px;
+    margin: 21px 388px 34px;
+    padding: 0 21px 0 0;
+    border-radius: 0px 25px 0px 25px;
+    border: solid 2px #77838f;
+    background-color: #77838f;
+  }
+  .Rectangle-Copy-6 {
+    width: 194px;
+    height: 54px;
+    margin: 0 15px 0 0;
+    padding: 17px 25px 17px 26px;
+    border-radius: 0px 25px 0px 25px;
+    border: solid 2px#77838f;
+    background-color: #fff;
+  }
+  .search_btn {
+    width: 120px;
+    height: 51px;
+    background-color: #77838f !important;
+    border: 1px solid #77838f !important;
+    border-radius: 0px 23px 0px 0px !important;
+  }
+  .college_row {
+    /* margin-top:221px !important; */
+  }
+  /* socialRankingpage */
+
+  .Crowdsourced-Social {
+    width: 450px;
+    height: 122px;
+    font-size: 45px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.35px;
+    color: #323232;
+  }
+  /* .Rank-Illustration-selfie-girl{
+    width: 288px;
+    height: 276px;
+    margin: 0 21px 0 0;
+    padding: 5px 12px 191px 6px;
+    opacity: 0.3;
+  } */
+  .Discover-the-most-en-social {
+    width: 428px;
+    height: 78px;
+    margin: 38px 0;
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.29;
+    letter-spacing: normal;
+    color: #626262;
+    white-space: pre-line;
+  }
+  .Rectangle-17-copy {
+    width: 111px;
+    height: 35px;
+    margin: 41px -53px 31px 63px;
+    padding: 10px 13px 10px 14px;
+    color: #44ac80;
+    background-color: #fff;
+  }
+  .engaging-content-group {
+    width: 84px;
+    height: 15px;
+    font-family: Avenir;
+    font-size: 11.5px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+  }
+  .engaging-content-group:hover {
+    background-color: #44ac80 !important;
+    color: #fff !important;
+    border: #44ac80 !important;
+    outline: none !important;
+
+    border: #fff !important;
+  }
+  .Path {
+    width: 16px;
+    height: 20px;
+    position: absolute;
+    left: 316px;
+    margin-top: -32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .engaging_div {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+  }
+  .Nav-Header-BackgroundMask {
+    width:100%;
+  }
+  .Header-BackgroundMask {
+    width: 375px;
+    height: 753px;
+    margin: 0 0 64px;
+    padding: 14px 0 53px 27px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(156, 216, 190, 0.11),
+      rgba(108, 198, 159, 0.44)
+    );
+  }
+  .Rectangle-2-copy {
+    height: 119px;
+    margin: 0 0 95px;
+  }
+  .Home-About-Contact {
+    height: 22px;
+    font-size: 16px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2c3e50;
+  }
+  .Welcome-to-Rankorder {
+    width: 341px;
+    height: 110px;
+    margin: 18px -8px 16px 7px;
+    font-size: 40px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.31px;
+    color: #323232;
+  }
+  .We-crowdsource-opini {
+    width: 296px;
+    height: 88px;
+    margin: 16px 4px 26px 7px;
+    font-family: Avenir;
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #626262;
+  }
+  .Rectangle {
+    width: 302px;
+    height: 54px;
+    margin: 26px 6px 0 9px;
+    padding: 14px 32px 15px 33px;
+    border-radius: 25px;
+    background-color: #4eb186;
+  }
+
+  .Browse-College-Ranki {
+    width: 213px;
+    height: 25px;
+    margin: 0 12px 0 0;
+    font-size: 18px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #fff;
+  }
+
+  .Rank-Illustration {
+    width: 288px;
+    height: 276px;
+    margin: 26px 19px 18px 0;
+    object-fit: contain;
+  }
+  .wel-rank-col {
+    order: 2;
+  }
+  .wel-rank-col-img {
+    order: 1;
+  }
+  .Rankordered {
+    width: 160px;
+    height: 36px;
+    margin: 28px 0px -19px 0px;
+    font-size: 26px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    color: #4eb186;
+  }
+  .Rankordered .text-style-1 {
+    color: #0b0b0b;
+  }
+  .Welcome-Rank-div {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .college_row {
+    margin-top: 120px !important;
+  }
+  .crowdsourced-college-mobile {
+    width: 224px;
+    height: 72px;
+    margin: 64px 65px 20px 37px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    white-space: pre-wrap;
+    color: #2c3e50;
+  }
+  .Rectangle-Copy-5 {
+    width: 248px;
+    height: 54px;
+    margin: 20px 90px 27px 37px;
+    padding: 0 21px 0 0;
+    border-radius: 0px 25px 0px 25px;
+    border: solid 2px #77838f;
+    background-color: #77838f;
+  }
+  .Rectangle-Copy-6 {
+    width: 194px !important;
+    height: 54px;
+    margin: 0 15px 0 0;
+    padding: 17px 25px 17px 26px;
+    border-radius: 0px 25px 0px 25px;
+    border: solid 2px #77838f;
+    background-color: #fff;
+  }
+  .Forma-1-copy-6 {
+    width: 51px;
+    height: 30px;
+    margin: 0 9px 0 0;
+    background-color: #ffcd05;
+  }
+  .info_form_check {
+    display: flex;
+    margin: 32px 0px 12px 0px;
+  }
+
+  .row {
+    --bs-gutter-x: none !important;
+    margin-left: none !important;
+  }
+
+  /* rankorder-modal */
+
+  .Rectangle {
+    width: 224px;
+    height: 36px;
+    margin: 34px 76px 22px 5px;
+    font-size: 26px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    color: #4eb186;
+  }
+  .Rectangle.text-style-1 {
+    color: #0b0b0b;
+  }
+  .voter-img-div {
+    width: 100%;
+    height: 272px;
+    border-radius: 13px;
+    border: solid 1px#979797;
+    width: 343px;
+    margin: 0px 0px 0px -44px;
+  }
+  .Rectangle-modal {
+    width: 539px;
+    height: 387px;
+    margin: 32px 3px -80px -22px !important;
+    padding: 41px 21px 43px;
+  }
+  .modal-content {
+    background-color: #f4fbf8 !important;
+    width: 100% !important;
+    height: 812px;
+  }
+  .modal-header {
+    align-items: none;
+    margin: 10px 0px 0px 0px;
+  }
+  .which-college-more-prestigious {
+    width: 273px;
+    height: 22px;
+    margin: 20px 37px 11px 35px;
+    font-size: 16px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.15px;
+    text-align: center;
+    color: #2c3e50;
+    white-space: nowrap;
+  }
+  .earlham-modal {
+    order: 2;
+  }
+  .earlham-modal-more {
+    order: 1;
+  }
+  .Rectangle-More-info {
+    position: absolute;
+    top: -234px;
+    left: 106px;
+  }
+  .voting-heading {
+    display: flex;
+    position: absolute;
+  }
+  .Earlham-college-name {
+    margin: 93px 0px 0px -51px;
+  }
+  .Earlham-College {
+    width: 290px;
+    height: 33px;
+    margin: 0px 0px 0px -15px;
+    font-family: Avenir;
+    font-size: 20px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    color: #fff;
+  }
+  .Richmond-IN {
+    color: #fff;
+  }
+  .modal-dialog {
+    position: relative;
+    width: auto;
+    pointer-events: none;
+  }
+  .Crowdsourced-Social-mobile {
+    width: 258px;
+    height: 68px;
+    margin: 60px 0 34px 0px;
+    font-size: 25px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    color: #323232;
+  }
+  .Crowdsourced-Social-div {
+    margin: 60px 0px 0px 0px;
+  }
+  .Didcover-most-div {
+    margin: 30px 0px 0px 0px;
+  }
+  .Discover-the-most-en-social-mobile {
+    width: 296px;
+    height: 44px;
+    margin: 34px 3px 31px 8px;
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #626262;
+  }
+  .social-person-detail {
+    text-align: -webkit-match-parent;
+    margin: 0px 0px 0px 26px;
+  }
+  .card-body-Earlham-College {
+    margin: -84px 0px 0px 15px;
+  }
+  .voter-rectangle-earlham {
+    margin-top: -88px;
+  }
+  .capther-bg-box {
+    margin: 80px -4px -5px 4px;
+  }
+  .skip-div {
+    font-size: 18px;
+    font-weight: 900;
+    margin: 101px 134px 0px 129px;
+    color: #2c3e50;
+  }
+  .Path {
+    width: 16px;
+    height: 20px;
+    position: absolute;
+    left: 303px;
+    margin-top: -46px;
+  }
+  .card-voter.selected-card {
+    border-color: blue;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .voting-radio-selection {
+    opacity: 0;
+  }
+
+  .navbarScroll.navbar-toggler-collapsed.navbar-toggler-icon {
+    color: red;
+  }
+  button.navbar-toggler .navbar-toggler-icon {
+    background-image: url('./assets/images/closeicon.png');
+}
+button.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-image: url('./assets/images/menubar.png') !important;
+
+}
+
+button:focus:not(:focus-visible) {
+  outline: none !important;
+    border-color: transparent;
+    box-shadow: initial;
+}
+
+}

@@ -7,6 +7,8 @@ import { universityAction } from "../../../redux//list/actions";
 import { useRouter } from "next/router";
 import EntertainmentCom from "../studentContent/EntertainmentCom"
 
+import Image from "next/image";
+
 
 function SocialSecondPage({ 
   allCollegeData,
@@ -152,13 +154,15 @@ function SocialSecondPage({
                           style={{ padding: "0px"}}
                         >
                           <div clssName="img_base">
-                            <img
+                            <Image
                               src={college.image}
                               alt="Images of College"
+                              layout='fill'
                               style={{
-                                cursor: "pointer",
-                                width: "100%",
-                                height: "233px",
+                               
+                                // width: "100%",
+                                // height: "233px",
+
                               }}
                             />
                           </div>

@@ -163,6 +163,8 @@ function SocialRank() {
                     src={illustration}
                     alt="illustration"
                     className=""
+                    // layout='fill'
+                    width={100}
                     height={520}
                   />
                 </div>
@@ -253,7 +255,7 @@ function SocialRank() {
                           style={{ padding: "0px" }}
                         >
                           <div clssName="img_base">
-                            <img
+                            <Image
                               src={college.image}
                               alt="Images of College"
                               style={{

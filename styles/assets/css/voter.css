@@ -131,4 +131,21 @@ border: 1px solid #44ac80;
     .capther-bg-box{
       margin: 112px 0px 0px 62px
     }
+    .Voter-Rectangle-modal>span>img{
+      width: 50%;
+    }
+    .voter-img-div {
+      width: 50%;
+      height: 272px;
+      border-radius: 13px;
+      border: solid 1px#979797;
+      width: 343px;
+      margin: 0px 0px 0px -44px;
+    }
+    .card-input-element{
+      
+    }
+    .voter-rectangle-earlham>span,.voter-rectangle-earlham>span>img{
+      border: 5px solid red !important;
+    }
     

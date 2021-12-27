@@ -9,7 +9,7 @@
   font-family: Avenir;
 }
 .Nav-Header-BackgroundMask{
-  width: 1920px;
+  width:100%;
   /* height:90px; */
   margin: 0 0 107px;
   background-image: linear-gradient(
@@ -19,7 +19,7 @@
   );
 }
 .Header-BackgroundMask {
-  width: 1920px;
+  width: 100%;
   height: 875px;
   margin: 0 0 107px;
   background-image: linear-gradient(

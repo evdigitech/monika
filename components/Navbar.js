@@ -15,12 +15,19 @@ import illustration from "../styles/assets/images/rank-illustration.png";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FaRegUser } from "react-icons/fa";
+import { BsList } from "react-icons/bs";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function NavbarComponent() {
   const router = useRouter();
   const [showWhite, setShowWhite] = useState(true);
   const [showGreen, setShowGreen] = useState();
+  const [imageFlag, setImageFlag] = useState(false);
+
+  const onImageHandler = () => {
+    console.log("imageee");
+    setImageFlag(!imageFlag);
+  };
   useEffect(() => {
     if (router.pathname === "/univercity/welcome/[CollegeDetailId]") {
       setShowWhite(true);
@@ -45,34 +52,52 @@ function NavbarComponent() {
       >
         <Navbar expand="lg">
           <Container>
-            <Navbar.Brand href="#">
+            <Navbar.Brand>
               <div className="Large_Rank_ordered_Logo d-none d-md-block">
                 <Link href="/">
-                  <Image src={rank} alt="rankorder" width={100} height={100} />
+                  <Image src={rank} alt="rankorder" width={100} height={100}/>
                 </Link>
               </div>
+              
               <div className="d-md-none pt-4">
+              {imageFlag ? (
+              <Link href="/">
+              <Image src={rank} alt="rankorder" width={100} height={100} />
+            </Link>
+              ) : (
                 <Link href="/">
                   <span className="Rankordered">
                     <span className="text-style-1">Rank</span>ordered
                   </span>
                 </Link>
+              )}                
               </div>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarScroll" />
+            <Navbar.Toggle
+              aria-controls="navbarScroll"
+              onClick={() => onImageHandler()}
+            />
             <Navbar.Collapse id="navbarScroll">
               <Nav className="mx-auto my-2 my-lg-0" navbarScroll>
-                <Nav.Link href="/">
-                  <span className="nav-link">Home</span>
-                </Nav.Link>
-                <Nav.Link href="/comman/About">
-                  <span className="nav-link">About</span>
-                </Nav.Link>
-                <Nav.Link href="/comman/Contact">
-                  <span className="nav-link">Contact</span>
-                </Nav.Link>
+                <li className="nav-item">
+                  <Link href="/">
+                    <a className="nav-link">Home</a>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link href="/comman/About">
+                    <a className="nav-link">About</a>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link href="/comman/Contact">
+                    <a className="nav-link">Contact</a>
+                  </Link>
+                </li>
               </Nav>
-              <div className="div-end-line d-md-none pb-4"><hr/></div>
+              <div className="div-end-line d-md-none pb-4">
+                <hr />
+              </div>
               <div>
                 <Form className="d-flex">
                   <Button className="start_ranking">
@@ -90,7 +115,7 @@ function NavbarComponent() {
             </Navbar.Collapse>
           </Container>
         </Navbar>
-      </div>    
+      </div>
     </>
   );
 }

@@ -9,6 +9,8 @@ import { useSelector, useDispatch } from "react-redux";
 import ListChart from "../ListChart";
 import { universityAction } from "../../../redux/list/actions";
 
+import Image from "next/image"
+
 
 function CollegeRankDetai({
   listDetailsHandlerCall,
@@ -130,7 +132,7 @@ function CollegeRankDetai({
                             clssName="img_base"
                             onClick={(e) => collegeDetails(college.id)}
                           >
-                            <img
+                            <Image
                               src={college.image}
                               alt="Images of College"
                               style={{

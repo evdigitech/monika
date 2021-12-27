@@ -82,27 +82,26 @@ function WelcomeRank() {
               </Row>
             </div> */}
               <div className="">
-                  <Dropdown classname="dropdown-welcome-div">
-                    <Dropdown.Toggle className="" id="dropdown-basic-Rectangle">
-                      Browse College Rankings
-                    </Dropdown.Toggle>
-                    <Dropdown.Menu id="dropdown-menu-rectangle">
-                      <Dropdown.Item
-                        id="dropdown-menu-item"
-                        href="#/action-1"
-                        value={clgRank}
-                        onClick={() => clgRankHandler()}
-                      >
-                        Browse College Rankings
-                      </Dropdown.Item>
-                      <Dropdown.Item id="dropdown-menu-item"
-                        href="#/action-1"
-                        onClick={() => socilMediaHandler()}
-                      >
-                        Browse Social Media Rankings
-                      </Dropdown.Item>
-                    </Dropdown.Menu>
-                  </Dropdown>
+                <Dropdown classname="dropdown-welcome-div">
+                  <Dropdown.Toggle className="" id="dropdown-basic-Rectangle">
+                    Browse College Rankings
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu id="dropdown-menu-rectangle">
+                    <Dropdown.Item
+                      id="dropdown-menu-item"
+                      value={clgRank}
+                      onClick={() => clgRankHandler()}
+                    >
+                      <Link href="/"> Browse College Rankings</Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item
+                      id="dropdown-menu-item"
+                      onClick={() => socilMediaHandler()}
+                    >
+                      <Link href="/"> Browse Social Media Rankings</Link>
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
               </div>
             </Col>
             <Col xs={12} sm={12} md={6} className="wel-rank-col-img">
@@ -123,4 +122,3 @@ function WelcomeRank() {
   );
 }
 export default WelcomeRank;
-

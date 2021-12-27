@@ -11,11 +11,11 @@ import ReCAPTCHA from "react-google-recaptcha";
 import Link from "next/link";
 import { BsFillFlagFill } from "react-icons/bs";
 import { useRouter } from "next/router";
-// import CollegeDetail from "../univercity/welcome/[CollegeDetailId]";
+import CollegeDetail from "../univercity/welcome/[CollegeDetailId]";
 
 function VoteForm({ show, close }) {
   const router = useRouter();
-
+  const {} = router.query;
 
   const { handleSubmit } = useForm();
   const [selectedCollege, setSelectedCollege] = useState();
@@ -26,13 +26,15 @@ function VoteForm({ show, close }) {
   const [voting, setVoting] = useState([]);
   const [votingError, setVotingError] = useState();
 
+  console.log("voting", voting);
+
   const formSubmitHandler = () => {
     console.log("formSubmitHandler");
     if (userVerified) {
       setShowError(true);
       return;
     }
-    router.push("./univercity/welcome/[CollegeDetailId]")
+    router.push("./univercity/welcome/[CollegeDetailId]");
   };
 
   const submitVote = (value) => {
@@ -42,12 +44,12 @@ function VoteForm({ show, close }) {
       return;
     }
   };
-
   const onSelectionChange = (id) => {
     console.log("setSelectedCollege");
     setSelectedCollege(id);
   };
 
+  // fetchapi
   useEffect(() => {
     setVoting([]);
   }, []);
@@ -57,25 +59,32 @@ function VoteForm({ show, close }) {
       url: apiPath + "/api/v1/colleges/voting",
     })
       .then((res) => {
-        setVoting((prevschools) => {
-          return [...new Set([...prevschools, ...res.data])];
-        });
+        console.log("voting", voting);
+
+        // setVoting((prevschools) => {
+        //   return [...new Set([...prevschools, ...res.data])];
+        // });
+        // console.log("prevschools", prevschools);
+
+        const arrayData = res.data;
+        setVoting(arrayData);
         console.log("res", res);
       })
-      .catch((e) => {
+      .catch((error) => {
         setVotingError(error);
+        console.log("erro", error);
       });
-    // return {voting,votingError};
+    // return { voting, votingError };
   }, []);
 
-const voterMoreInfoHandler=(value)=>{
-  console.log("voterMoreInfoHandler")
-  router.push(`../univercity/welcome/${value}`)
-}
+  const voterMoreInfoHandler = (value) => {
+    console.log("voterMoreInfoHandler");
+    router.push(`../univercity/welcome/${value}`);
+  };
 
   return (
     <>
-    {/* <CollegeDetail/> */}
+      {/* <CollegeDetail/> */}
       <Modal
         show={show}
         onHide={close}
@@ -88,8 +97,8 @@ const voterMoreInfoHandler=(value)=>{
       >
         <form onSubmit={handleSubmit(formSubmitHandler)}>
           <Modal.Header closeButton>
-            <span class="Rankordered d-md-none">
-              <span class="text-style-1">Rank</span>ordered
+            <span className="Rankordered d-md-none">
+              <span className="text-style-1">Rank</span>ordered
             </span>
           </Modal.Header>
           <Modal.Body>
@@ -103,7 +112,36 @@ const voterMoreInfoHandler=(value)=>{
                 {voting.map((college, id) => {
                   return (
                     <>
-                      <Col
+                      <Col>
+                        <div>
+                          <label
+                            className={
+                              selectedCollege === college.id
+                                ? "voter-rectangle-earlham voter"
+                                : "voter-rectangle-earlham>span,.voter-rectangle-earlham>span>img"
+                            }
+                          >
+                            <input
+                              type="radio"
+                              name="winner"
+                              className="card-input-element voting-radio-selection"
+                              value={college.id}
+                              onChange={(e) => {
+                                onSelectionChange(college.id);
+                              }}
+                            />
+                            <Image
+                              className="voter-img-div voter-modal"
+                              src={college.image}
+                              alt="collegeimage"
+                              // layout='fill'
+                              width={400}
+                              height={400}
+                            />
+                          </label>
+                        </div>
+                      </Col>
+                      {/* <Col
                         sm={12}
                         md={6}
                         key={college.id}
@@ -114,7 +152,11 @@ const voterMoreInfoHandler=(value)=>{
                             : "")
                         }
                       >
-                        <label className="voter-rectangle-earlham voter">
+                        <label  className={
+                              selectedCollege === college.id
+                                ? "voter-rectangle-earlham voter"
+                                : "voter-rectangle-earlham>span,.voter-rectangle-earlham>span>img"
+                            }>
                           <input
                             type="radio"
                             name="winner"
@@ -125,9 +167,13 @@ const voterMoreInfoHandler=(value)=>{
                             }}
                           />
                           <div className="Voter-Rectangle-modal Rectangle-modal">
-                            <img
+                            <Image
                               className="voter-img-div voter-modal"
                               src={college.image}
+                              alt="collegeimage"
+                              // layout='fill'
+                              width={400}
+                              height={400}
                             />
                           </div>
                           <div className="Path">
@@ -153,8 +199,9 @@ const voterMoreInfoHandler=(value)=>{
                               </Col>
                               <Col className="earlham-modal-more">
                                 <div className="Rectangle-More-info">
-                                  <button className="More-info" 
-                                  onClick={()=>voterMoreInfoHandler()}
+                                  <button
+                                    className="More-info"
+                                    onClick={() => voterMoreInfoHandler()}
                                   >
                                     More Info
                                   </button>
@@ -163,7 +210,7 @@ const voterMoreInfoHandler=(value)=>{
                             </Row>
                           </div>
                         </label>
-                      </Col>
+                      </Col> */}
                     </>
                   );
                 })}

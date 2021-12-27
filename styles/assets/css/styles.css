@@ -9,7 +9,7 @@
 }
 @media (max-width: 1920px) {
   .college_row {
-    margin-top:97px !important;
+    margin-top: 97px !important;
   }
   .Rectangle-Copy-5 {
     width: 248px;
@@ -37,13 +37,13 @@
   .ranking-img {
     height: 233px;
   }
-  .list-college{
-    margin:0px 0px 0px 0px;
+  .list-college {
+    margin: 0px 0px 0px 0px;
   }
-  .social_student_college_row{
-    margin-top:143px !important;
+  .social_student_college_row {
+    margin-top: 143px !important;
   }
-  .social-student-Rectangle-Copy-5{
+  .social-student-Rectangle-Copy-5 {
     width: 248px;
     height: 54px;
     width: 248px;
@@ -53,7 +53,7 @@
     border-radius: 0px 25px 0px 25px;
     border: solid 2px #44ac80;
     background-color: #44ac80;
-  }  
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -61,19 +61,19 @@
     display: flex;
     height: 43px;
     padding: 12px 16px 12px 17px;
-}
-.start_ranking {
-  border-radius: 50px !important;
-  width: 136px;
-  background-color: #44ac80 !important;
-  margin: 1px 22px 0px 1px;
-  padding: 10px 25px 12px;
-  border: 1px solid #44ac80 !important;
-  height: 53px;
-}
+  }
+  .start_ranking {
+    border-radius: 50px !important;
+    width: 136px;
+    background-color: #44ac80 !important;
+    margin: 1px 22px 0px 1px;
+    padding: 10px 25px 12px;
+    border: 1px solid #44ac80 !important;
+    height: 53px;
+  }
 }
 @media (max-width: 1024px) {
-  .Nav-Header-BackgroundMask{
+  .Nav-Header-BackgroundMask {
     width: 1024px;
   }
   .Header-BackgroundMask {
@@ -294,17 +294,17 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .engaging_div {
     display: flex;
     width: 100%;
     overflow: auto;
   }
   .Nav-Header-BackgroundMask {
-    width:375px;
+    width: 100%;
   }
   .Header-BackgroundMask {
-    width: 375px;
+    width:100%;
     height: 753px;
     margin: 0 0 64px;
     padding: 14px 0 53px 27px;
@@ -473,7 +473,7 @@
   .Rectangle.text-style-1 {
     color: #0b0b0b;
   }
-  .voter-img-div{
+  .voter-img-div {
     width: 100%;
     height: 272px;
     border-radius: 13px;
@@ -481,10 +481,10 @@
     width: 343px;
     margin: 0px 0px 0px -44px;
   }
-  .Rectangle-modal{
+  .Rectangle-modal {
     width: 539px;
     height: 387px;
-    margin:32px 3px -80px -22px !important;
+    margin: 32px 3px -80px -22px !important;
     padding: 41px 21px 43px;
   }
   .modal-content {
@@ -511,10 +511,10 @@
     white-space: nowrap;
   }
   .earlham-modal {
-    order:2;
+    order: 2;
   }
   .earlham-modal-more {
-    order:1;
+    order: 1;
   }
   .Rectangle-More-info {
     position: absolute;
@@ -604,14 +604,31 @@
     position: absolute;
     left: 303px;
     margin-top: -46px;
+  }
+  .card-voter.selected-card {
+    border-color: blue;
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .voting-radio-selection {
+    opacity: 0;
+  }
+
+  .navbarScroll.navbar-toggler-collapsed.navbar-toggler-icon {
+    color: red;
+  }
+  button.navbar-toggler .navbar-toggler-icon {
+    background-image: url('../images/closeicon.png');
 }
-.card-voter.selected-card {
-  border-color: blue;
-  font-size: 30px;
-  font-weight: bolder;
+button.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-image: url('../images/menubar.png') !important;
+
 }
-.voting-radio-selection{
-  opacity: 0;
+
+button:focus:not(:focus-visible) {
+  outline: none !important;
+    border-color: transparent;
+    box-shadow: initial;
 }
 
 }
