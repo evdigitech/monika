@@ -14,7 +14,7 @@ function ListChart({ school }) {
       if (item) {
         if (item[0] !== "Date") {
           item[0] = moment(item[0]).format("MM-DD-YYYY");
-          mergedData = [...mergedData, [item[0], item[1], null]];
+          // mergedData = [...mergedData, [item[0], item[1], null]];
         }
       }
       return item;

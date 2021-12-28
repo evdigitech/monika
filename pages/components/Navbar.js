@@ -54,7 +54,7 @@ function NavbarComponent() {
           <Container>
             <Navbar.Brand>
               <div className="Large_Rank_ordered_Logo d-none d-md-block">
-                <Link href="/">
+                <Link href="#">
                   <Image src={rank} alt="rankorder" width={100} height={100}/>
                 </Link>
               </div>
