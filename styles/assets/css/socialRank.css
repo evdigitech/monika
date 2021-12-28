@@ -106,7 +106,7 @@
   border-radius: 0px 0px 0px 22px;
   }
   .dropdown-welcome-div{
-    background-color: red;
+    /* background-color: red; */
     width: 384px;
     height:200px;
   }
@@ -137,8 +137,34 @@
   }
  
   .uuu {
-    background: yellowgreen;
+    background: #ffcd05;
     clip-path: polygon(66% 0, 100% 50%, 66% 100%, 0 100%, 0 0);
-    width: 50px;
+    width:15%;
+    position: absolute;
+    top: 4%;
+  }
+  .Flagutton{
+    width:100%;
+    height:54px;
+    margin: 42px 76px 22px 12px;
+    font-size: 26px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    background-color:#9cd8be;
+    color: #fff;
+    border-radius: 0px 25px 0px 25px !important;
+    border: none !important;
+    outline: none !important;
+  }
+  .Flagutton:hover{
+    background-color:#9cd8be;
+
+  }
+  .Rank-Illustration>span,.Rank-Illustration>span>span,.Rank-Illustration>span>span>img{
+    width: 100% !important;
+    height: 520px !important;
   }
   

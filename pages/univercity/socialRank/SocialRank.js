@@ -164,8 +164,8 @@ function SocialRank() {
                     alt="illustration"
                     className=""
                     // layout='fill'
-                    width={100}
-                    height={520}
+                    // width={100}
+                    // height={520}
                   />
                 </div>
               </Col>
@@ -258,10 +258,12 @@ function SocialRank() {
                             <Image
                               src={college.image}
                               alt="Images of College"
+                              width={400}
+                              height={233}
                               style={{
                                 cursor: "pointer",
-                                width: "100%",
-                                height: "233px",
+                                // width: "100%",
+                                // height: "233px",
                               }}
                             />
                           </div>

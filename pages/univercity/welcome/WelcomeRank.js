@@ -11,7 +11,7 @@ import {
 } from "react-bootstrap";
 import Image from "next/image";
 import rank from "../../../styles/assets/images/ranklogo.jpg";
-import illustration from "../../../styles/assets/images/rank-illustration.png";
+import rankIllustration from "../../../styles/assets/images/rank-illustration.png";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { connect } from "react-redux";
@@ -25,15 +25,25 @@ function WelcomeRank() {
   const [clgRank, setClgRank] = useState(false);
   const [socialMediaRank, SetSocialMediaRank] = useState(true);
   const [flag, setFlag] = useState(false);
+  const[buttonFlag, SetButtonFlag]=useState(0)
 
   const dispatch = useDispatch();
 
   const clgRankHandler = (val) => {
     setFlag(true);
+    
   };
 
-  const socilMediaHandler = (val) => {
-    route.push("/univercity/socialRank/SocialRank");
+  const socilMediaHandler =( index,val) => {
+    // route.push("/univercity/socialRank/SocialRank");
+    SetButtonFlag(index)
+    setFlag(true);
+    if(index== 0 ){
+      route.push("");
+    }else{
+route.push('/univercity/socialRank/SocialRank')
+    }
+
   };
 
   return (
@@ -55,13 +65,14 @@ function WelcomeRank() {
                 </div>
               </div>
               {/* d-md-block */}
-              {/* <div className="d-md-block">
+              <div className="d-md-block">
               <Row>
                 <Col md={5}>
                   <Button
-                    className="Rectangle"
+                    className={buttonFlag == 0 ? "Rectangle":"Flagutton"}
+                    
                     value={clgRank}
-                    onClick={() => clgRankHandler()}
+                    onClick={() => socilMediaHandler(0)}
                   >
                     <span className="Browse-College-Ranki">
                       Browse College Rankings
@@ -70,9 +81,9 @@ function WelcomeRank() {
                 </Col>
                 <Col md={7}>
                   <Button
-                    className="Rectangle-Social-Media"
+                    className={buttonFlag == 1 ? "Rectangle":"Flagutton"}
                     value={socialMediaRank}
-                    onClick={() => socilMediaHandler()}
+                    onClick={() => socilMediaHandler(1)}
                   >
                     <span className="Browse-Social-Media">
                       Browse Social Media Rankings
@@ -80,8 +91,8 @@ function WelcomeRank() {
                   </Button>
                 </Col>
               </Row>
-            </div> */}
-              <div className="">
+            </div> 
+              {/* <div className="">
                 <Dropdown classname="dropdown-welcome-div">
                   <Dropdown.Toggle className="" id="dropdown-basic-Rectangle">
                     Browse College Rankings
@@ -102,12 +113,12 @@ function WelcomeRank() {
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
-              </div>
+              </div> */}
             </Col>
             <Col xs={12} sm={12} md={6} className="wel-rank-col-img">
               <div className="Rank-Illustration">
                 <Image
-                  src={illustration}
+                  src={rankIllustration}
                   alt="illustration"
                   className=""
                   height={520}
