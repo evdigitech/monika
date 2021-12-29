@@ -10,8 +10,7 @@ import {
   Button,
 } from "react-bootstrap";
 import Image from "next/image";
-import rank from '../../styles/assets/images/ranklogo.jpg';
-import illustration from "../../styles/assets/images/rank-illustration.png";
+import rank from '../styles/assets/images/ranklogo.jpg';
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { FaRegUser } from "react-icons/fa";
