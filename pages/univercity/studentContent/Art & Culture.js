@@ -9,4 +9,4 @@ Art & Culture
     )
 }
 
-export default Art & Culture
+export default ArtCulture
