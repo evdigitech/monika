@@ -293,6 +293,10 @@
 }
 
 @media (max-width: 768px) {
+  .Rank-Illustration>span,.Rank-Illustration>span>span,.Rank-Illustration>span>span>img{
+    width: 100% !important;
+    height:260px !important;
+  }
   .engaging_div {
     display: flex;
     width: 100%;
