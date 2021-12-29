@@ -1,7 +1,7 @@
 import React, {useState,useEffect } from "react";
 import Image from "next/image";
 import { Row, Col, Card, Modal, Button } from "react-bootstrap";
-import Carousel from "react-slick";
+// import Carousel from "react-slick";
 import logo from "../../styles/assets/images/ranklogo.jpg";
 import apiPath from "../api/commonPath";
 import axios from "axios";
@@ -83,17 +83,15 @@ function Contact(props) {
         </Carousel>
       </Card> */}
 
-      <Button variant="primary" onClick={handleShow}>
+       <Button variant="primary" onClick={handleShow}>
         Launch demo modal
       </Button>
 
-      <Modal show={show} onHide={handleClose} animation={false}>
+      <Modal size="lg" show={show} onHide={handleClose} animation={false}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          <p>Woohoo,reading this text in a modal!</p>
-        </Modal.Body>
+        <Modal.Body>Woohoo, reading this text in a modal!</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close

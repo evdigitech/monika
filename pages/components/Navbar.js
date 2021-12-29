@@ -54,22 +54,28 @@ function NavbarComponent() {
           <Container>
             <Navbar.Brand>
               <div className="Large_Rank_ordered_Logo d-none d-md-block">
+               {/* eslint-disable-next-line  */}
                 <Link href="#">
                   <Image src={rank} alt="rankorder" width={100} height={100}/>
                 </Link>
               </div>
               
               <div className="d-md-none pt-4">
-              {imageFlag ? (
+              {imageFlag ? (<>
+               {/* eslint-disable-next-line  */}                
               <Link href="/">
               <Image src={rank} alt="rankorder" width={100} height={100} />
             </Link>
+            </>
               ) : (
+                <>
+               {/* eslint-disable-next-line  */}
                 <Link href="/">
                   <span className="Rankordered">
                     <span className="text-style-1">Rank</span>ordered
                   </span>
                 </Link>
+                </>
               )}                
               </div>
             </Navbar.Brand>
