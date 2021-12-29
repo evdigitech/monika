@@ -78,7 +78,14 @@
 .nav-link {
   color: #2c3e50 !important;
   font-weight: 600;
+  margin: 16px 54px 5px 0;
 }
+/* .li_about{
+  color: #2c3e50 !important;
+  font-weight: 600;
+  text-decoration: none;
+
+} */
 .div-end-line {
   color: #000 !important;
   height: 4px !important;

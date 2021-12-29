@@ -91,7 +91,7 @@ function NavbarComponent() {
                 </li>
                 <li className="nav-item">
                   <Link href="/comman/About">
-                    <a className="nav-link px-5">About</a>
+                    <a className="nav-link li_about ">About</a>
                   </Link>
                 </li>
                 <li className="nav-item">
