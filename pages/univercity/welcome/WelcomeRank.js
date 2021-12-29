@@ -35,13 +35,13 @@ function WelcomeRank() {
   };
 
   const socilMediaHandler =( index,val) => {
-    // route.push("/univercity/socialRank/SocialRank");
+    // route.push("");
     SetButtonFlag(index)
-    setFlag(true);
+    // setFlag(true);
     if(index== 0 ){
       route.push("");
     }else{
-route.push('/univercity/socialRank/SocialRank')
+// route.push('/univercity/socialRank/SocialRank')
     }
 
   };

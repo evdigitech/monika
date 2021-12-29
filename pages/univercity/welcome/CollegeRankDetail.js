@@ -142,8 +142,7 @@ function CollegeRankDetai({
                               //   cursor: "pointer",
                               //   width: "100%",
                               //   height: "233px",
-                              // }}
-                              
+                              // }}                              
                             />
                           </div>
                           <div clssName="Forma-1-copy-6">
