@@ -11,6 +11,11 @@ import ReCAPTCHA from "react-google-recaptcha";
 import Link from "next/link";
 import { BsFillFlagFill } from "react-icons/bs";
 import { useRouter } from "next/router";
+import Slider from "react-slick";
+
+import illustration from "../../styles/assets/images/illustration.png";
+import irankllustration from "../../styles/assets/images/rank-illustration.png";
+
 import CollegeDetail from "../univercity/welcome/[CollegeDetailId]";
 
 function VoteForm({ show, close }) {
@@ -44,9 +49,9 @@ function VoteForm({ show, close }) {
       return;
     }
   };
-  const onSelectionChange = (id) => {
+  const onSelectionChange = () => {
     console.log("setSelectedCollege");
-    setSelectedCollege(id);
+    // setSelectedCollege(id);
   };
 
   // fetchapi
@@ -82,9 +87,35 @@ function VoteForm({ show, close }) {
     router.push(`../univercity/welcome/${value}`);
   };
 
+  var settings1 = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 3000,
 
-  
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+    ],
+  };
 
+  const imageData = [
+    {
+      image1: illustration,
+    },
+    {
+      image1: irankllustration,
+    },
+  ];
   return (
     <>
       <Modal
@@ -111,13 +142,52 @@ function VoteForm({ show, close }) {
             </div>
 
             <div className="card-content">
-
-              <Row>
-                {voting.map((college, id) => {
-                  return (
-                    <>
-                      <Col>
-                        <div>
+              <div
+                className="slider_div"
+                // style={{ width: "50%", height: "200px" }}
+              >
+                <div style={{ width: "50%", height: "200px" }}>
+                  <Slider {...settings1} className="px-0 mx-0">
+                    {voting.map((college, id) => {
+                      return (
+                        <Col key={id}>
+                          <label
+                            className={
+                              selectedCollege === college.id
+                                ? "voter-rectangle-earlham voter"
+                                : "voter-rectangle-earlham>span,.voter-rectangle-earlham>span>img"
+                            }
+                          >
+                            {/* <input
+                              type="radio"
+                              name="winner"
+                              className="card-input-element voting-radio-selection"
+                              value={college.id}
+                              onClick={(e) => {
+                                onSelectionChange(college.id);
+                              }}
+                            /> */}
+                            <Image
+                              className="voter-img-div voter-modal"
+                              src={college.image}
+                              alt="collegeimage"
+                              // layout='fill'
+                              width={400}
+                              height={400}
+                              // value={college.id}
+                              onClick={console.log("gfhjfgi")}
+                            />
+                          </label>
+                        </Col>
+                      );
+                    })}
+                  </Slider>
+                </div>
+                <div style={{ width: "50%", height: "200px" }}>
+                  <Slider {...settings1} className="px-0 mx-0">
+                    {voting.map((college, id) => {
+                      return (
+                        <Col key={id}>
                           <label
                             className={
                               selectedCollege === college.id
@@ -143,83 +213,12 @@ function VoteForm({ show, close }) {
                               height={400}
                             />
                           </label>
-                        </div>
-                      </Col>
-                      {/* <Col
-                        sm={12}
-                        md={6}
-                        key={college.id}
-                        className={
-                          "card-voter" +
-                          (selectedCollege === college.id
-                            ? "selected-card"
-                            : "")
-                        }
-                      >
-                        <label  className={
-                              selectedCollege === college.id
-                                ? "voter-rectangle-earlham voter"
-                                : "voter-rectangle-earlham>span,.voter-rectangle-earlham>span>img"
-                            }>
-                          <input
-                            type="radio"
-                            name="winner"
-                            className="card-input-element voting-radio-selection"
-                            value={college.id}
-                            onChange={(e) => {
-                              onSelectionChange(college.id);
-                            }}
-                          />
-                          <div className="Voter-Rectangle-modal Rectangle-modal">
-                            <Image
-                              className="voter-img-div voter-modal"
-                              src={college.image}
-                              alt="collegeimage"
-                              // layout='fill'
-                              width={400}
-                              height={400}
-                            />
-                          </div>
-                          <div className="Path">
-                            <BsFillFlagFill style={{ color: "#f3f3f3" }} />
-                          </div>
-                          <div className="card-body-Earlham-College d-flex">
-                            <Row className="voting-heading">
-                              <Col className="earlham-modal">
-                                <div className="Earlham-college-name">
-                                  <span className="Earlham-College">
-                                    {college.name}
-                                  </span>
-                                  <p className="Richmond-IN">
-                                    <BsGeoAlt
-                                      className="shape"
-                                      style={{
-                                        color: "#44ac80",
-                                      }}
-                                    />
-                                    &nbsp; {college.city} - {college.state}
-                                  </p>
-                                </div>
-                              </Col>
-                              <Col className="earlham-modal-more">
-                                <div className="Rectangle-More-info">
-                                  <button
-                                    className="More-info"
-                                    onClick={() => voterMoreInfoHandler()}
-                                  >
-                                    More Info
-                                  </button>
-                                </div>
-                              </Col>
-                            </Row>
-                          </div>
-                        </label>
-                      </Col> */}
-                    </>
-                  );
-                })}
-              </Row>
-
+                        </Col>
+                      );
+                    })}
+                  </Slider>
+                </div>
+              </div>
             </div>
             <div className="d-none d-md-block">
               <div className="capther-bg-box">
@@ -248,28 +247,105 @@ function VoteForm({ show, close }) {
             <div className="skip-div d-md-none">Skip</div>
           </Modal.Body>
           <Modal.Footer>
-            {/* <div className="row">
-                            <button
-                                className="btn btn-success notika-btn-success waves-effect width-auto"
-                                type="submit"
-                            >
-                                Submit
-                            </button>
-                            <button
-                                className="btn btn-danger notika-btn-danger waves-effect width-auto"
-                                onClick={close}
-                            >
-                                Cancel
-                            </button>
-                        </div> */}
+            <div className="d-flex">
+              <button
+                className="btn btn-success notika-btn-success waves-effect width-auto m-2"
+                type="submit"
+              >
+                Submit
+              </button>
+              <button
+                className="btn btn-danger notika-btn-danger waves-effect width-auto m-2"
+                onClick={close}
+              >
+                Cancel
+              </button>
+            </div>
           </Modal.Footer>
         </form>
+
+        {/* <Slider {...settings1} className="px-0 mx-0">
+
+            </Slider> */}
+        {/* <div className="slider_div" style={{width:'50%',height: "200px"}}>
+          <div style={{width:'50%',height: "200px"}}>
+            <Slider {...settings1} className="px-0 mx-0">
+            {voting.map((college, id)=> {
+                return (
+                  <Col
+                  key={id}             
+                >
+                  <label
+                            className={
+                              selectedCollege === college.id
+                                ? "voter-rectangle-earlham voter"
+                                : "voter-rectangle-earlham>span,.voter-rectangle-earlham>span>img"
+                            }
+                          >
+                            <input
+                              type="radio"
+                              name="winner"
+                              className="card-input-element voting-radio-selection"
+                              value={college.id}
+                              onChange={(e) => {
+                                onSelectionChange(college.id);
+                              }}
+                            />
+                            <Image
+                              className="voter-img-div voter-modal"
+                              src={college.image}
+                              alt="collegeimage"
+                              // layout='fill'
+                              width={400}
+                              height={400}
+                            />
+                          </label>           
+                </Col>
+                );
+              })}
+            </Slider>
+          </div>
+          <div style={{width:'50%',height: "200px"}}>
+            <Slider {...settings1} className="px-0 mx-0">
+            {voting.map((college, id)=> {
+                return (
+                  <Col
+                  key={id}             
+                >
+                  <label
+                            className={
+                              selectedCollege === college.id
+                                ? "voter-rectangle-earlham voter"
+                                : "voter-rectangle-earlham>span,.voter-rectangle-earlham>span>img"
+                            }
+                          >
+                            <input
+                              type="radio"
+                              name="winner"
+                              className="card-input-element voting-radio-selection"
+                              value={college.id}
+                              onChange={(e) => {
+                                onSelectionChange(college.id);
+                              }}
+                            />
+                            <Image
+                              className="voter-img-div voter-modal"
+                              src={college.image}
+                              alt="collegeimage"
+                              // layout='fill'
+                              width={400}
+                              height={400}
+                            />
+                          </label>           
+                </Col>
+                );
+              })}
+            </Slider>
+          </div>
+        </div> */}
       </Modal>
     </>
   );
 }
 
 export default VoteForm;
-
-
-

@@ -1,7 +1,7 @@
 import React, {useState,useEffect } from "react";
 import Image from "next/image";
 import { Row, Col, Card, Modal, Button } from "react-bootstrap";
-// import Carousel from "react-slick";
+import Carousel from "react-slick";
 import logo from "../../styles/assets/images/ranklogo.jpg";
 import apiPath from "../api/commonPath";
 import axios from "axios";
@@ -36,7 +36,7 @@ function Contact(props) {
   };
   return (
     <div>
-      {/* <Card className="" style={{width:"40%"}}>
+      <Card className="text-center" style={{width:"40%"}}>
         <Carousel {...settings}>
           <div>
             <Image
@@ -81,9 +81,9 @@ function Contact(props) {
             </div>
           </div>
         </Carousel>
-      </Card> */}
+      </Card>
 
-       <Button variant="primary" onClick={handleShow}>
+       {/* <Button variant="primary" onClick={handleShow}>
         Launch demo modal
       </Button>
 
@@ -100,7 +100,7 @@ function Contact(props) {
             Save Changes
           </Button>
         </Modal.Footer>
-      </Modal>
+      </Modal> */}
     </div>
   );
 }
